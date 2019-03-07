@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/31b8101b7be4ea7380dd68f7ae18231d?family=Blender+Pro+Thin" rel="stylesheet" type="text/css" />
+    <title>Unindexed</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+    <div id="main" class="container-fluid">
+        <img class="uiTitle" src="IMG/uiTitle.png" width="114" height="22">
+        <div class="sideNav">
+            <div class='sideNavWrap'>
+                <div class="progressWrap">
+                    <p class='chapterText'>ANONYMOUS</p>
+                    <img class="progressBar" src="IMG/progressBar.png">
+                </div>
+                <div class="arrowWrap">
+                    <img class="arrow arrowUp" src="IMG/arrowUp.png" height="18" width="18">
+                    <img class="arrow arrowDown" src="IMG/arrowDown.png" height="18" width="18">
+                </div>
+            </div>
+        </div>
+        <div class="row lowRight">
+            <div class="col-sm-6">
+                <!--
+                <div class="vidContainer cruiseVid">
+                    <video width="718" height="479" autoplay muted loop>
+                        <source src="VIDEO/cruise.mp4" type="video/mp4">
+                    </video>
+                </div>
+-->
+
+                <div id="appearing_div">
+                    <video id="video" muted>
+                        <source src="VIDEO/CRUISE_VID.mp4" type='video/mp4; codecs="avc1.42E01E"' />
+                    </video>
+                    <canvas width="1040" height="720" id="buffer" style="display:none"></canvas>
+                    <canvas width="640" height="360" id="output"></canvas>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <p class="dateText">2008</p>
+                <h2 class="medHeaderText">THE ANONS TAKE ON <br> PROJECT CHANOLOGY: <br> AN INTERNET WAR AGAISNT <br> THE CHURCH OF SCIENTOLOGY</h2>
+                <div class="row bodyTextRow">
+                    <div class="col-sm-1" class="blue">
+                        <img id="cruiseBut" class="button playBut" src="IMG/playBut.png" height="38" width="38">
+                    </div>
+                    <div class="col-sm-6" class="yellow">
+                        <p class="bodyText">After a video leaked of Tom Cruise gushing about his total devotion to the doctrines of Scientology, the church attempted to expunge the video from the Internet by sending legal nastygrams to anyone hosting or sharing it. *The anons were so enraged by this that they set out to destroy the church itself. So began Project Chanology, in which the anons wanted not only the lulz, but also for those lulz to have a real-world effect. And in dedicating themselves to that latter goal, Anonymous began to develop a real political consciousness.
+                        </p>
+                    </div>
+                    <div class="col-sm-5" class="yellow">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+        <!--        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+<script src="js/lottie.js"></script>
+<script>
+    $(".playBut").click(function() {
+        if ($(this).hasClass('playBut')) {
+            revealVid($(this).attr("id"));
+        } else if ($(this).hasClass('textBut')) {
+
+        } else if ($(this).hasClass('otherBut')) {
+
+        }
+    });
+
+    function revealVid(id) {
+        console.log(id);
+//        if (id == 'cruiseBut') {
+//            $(".cruiseVid").addClass("reveal")
+//        }
+//         $('#video').on('loadedmetadata', function() {
+            calcTransparency();
+            appear();
+//        });
+    }
+    //change this variables to your liking (they are time in milliseconds)
+    var HIDDEN_TIME = 10000;
+    var FADE_TIME = 600;
+
+//    $(document).ready(function() {
+//        $('#video').on('loadedmetadata', function() {
+//            calcTransparency();
+//            appear();
+//        });
+//    });
+    
+    function appear() {
+        $('#appearing_div').fadeIn("slow");
+        var video = $("#video").get(0);
+        var videoDuration = video.duration;
+        console.log(video);
+        video.play();
+        //video.muted = true;
+        //        setTimeout(disappear, videoDuration * 1000 - FADE_TIME);
+    };
+
+    function disappear() {
+        $('#appearing_div').fadeOut(FADE_TIME);
+        setTimeout(appear, HIDDEN_TIME);
+    };
+
+    //transparency function from http://www.sciencelifeny.com/transparency/transparency.html
+    function calcTransparency() {
+        var outputCanvas = document.getElementById('output'),
+            output = outputCanvas.getContext('2d'),
+            bufferCanvas = document.getElementById('buffer'),
+            buffer = bufferCanvas.getContext('2d'),
+            video = document.getElementById('video'),
+            width = outputCanvas.width,
+            height = outputCanvas.height,
+            interval;
+
+        function processFrame() {
+            video.crossOrigin = "Anonymous";
+            buffer.drawImage(video, 0, 0);
+//            // fill vertically  
+//            var vRatio = (height / video.videoHeight) * video.videoWidth;
+//            buffer.drawImage(video, 0, 0, vRatio, height);
+//
+//            // fill horizontally  
+//            var hRatio = (width / video.videoWidth) * video.videoHeight;
+//            buffer.drawImage(video, 0, 0, width, hRatio);
+
+            buffer.crossOrigin = "Anonymous";
+
+            // this can be done without alphaData, except in Firefox which doesn't like it when image is bigger than the canvas
+            var image = buffer.getImageData(0, 0, width, height),
+                imageData = image.data,
+                alphaData = buffer.getImageData(0, height, width, height).data;
+
+            for (var i = 3, len = imageData.length; i < len; i = i + 4) {
+                imageData[i] = alphaData[i - 1];
+                //console.log("alphaData [%d,%d] = %d", (i / 4) % width, i / 4 / width, imageData[i]);
+            }
+
+            output.putImageData(image, 0, 0, 0, 0, width, height);
+        }
+
+        video.addEventListener('pause', function() {
+            clearInterval(interval);
+        }, false);
+
+        video.addEventListener('play', function() {
+            clearInterval(interval);
+            interval = setInterval(processFrame, 40)
+        }, false);
+
+    }
+
+</script>

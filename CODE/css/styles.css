@@ -1,0 +1,507 @@
+body {
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#main {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bodyText {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 10pt;
+    line-height: 19pt;
+    font-style: normal;
+    color: #999999;
+    padding: 20px 0 0 39px;
+    width: 440px;
+}
+
+.medHeaderText {
+    font-family: "Blender Pro Thin" !important;
+    font-size: 29pt;
+    line-height: 40pt;
+    font-style: normal;
+    color: #c6c6c6;
+    padding-top: 10px;
+}
+.bigHeaderText {
+    font-family: "Blender Pro Thin" !important;
+    font-size: 42pt;
+    line-height: 40pt;
+    font-style: normal;
+    color: #c6c6c6;
+    padding-top: 10px;
+}
+.biggestHeaderText {
+    font-family: "Blender Pro Thin" !important;
+    font-size: 46pt;
+    letter-spacing: 6px;
+    line-height: 40pt;
+    font-style: normal;
+    color: #c6c6c6;
+    padding-top: 10px;
+}
+.bodyTextRow {
+    padding-top: 10px;
+}
+
+.dateText {
+    font-family: "Blender Pro Thin" !important;
+    font-size: 9pt;
+    line-height: 0pt;
+    padding-bottom: 1px;
+    font-style: normal;
+    color: red;
+    letter-spacing: 5px;
+}
+
+.paddingMid {
+    padding-top: 9%;
+/*    position: absolute;*/
+    
+}
+
+.vidContainer {
+    position: absolute;
+}
+
+.cruiseVid {
+    /*    position: absolute;*/
+    top: -16%;
+    left: 22%;
+    opacity: 0;
+}
+
+.sideNav {
+    z-index: 1000000;
+    box-sizing: border-box;
+/*    background-color:rgba(0, 0, 0, 0.3);*/
+    opacity: 1;
+    width: 100vh;
+    height: 80px;
+    transform-origin: top left;
+    transform: rotate(90deg);
+    position: absolute;
+    left: 107%;
+    top: 0%;
+    transition: 1s all ease;
+}
+
+.sideNavWrap {
+    top: 50%;
+    left: 310px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    /*
+    flex-direction: row;
+    flex-wrap: nowrap;
+*/
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.progressWrap {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.chapterText {
+    font-family: "Blender Pro Thin" !important;
+    font-size: 13pt;
+    letter-spacing: 2pt;
+    color: #b3b3b3;
+    margin: auto;
+}
+
+.progressBar {
+    /*    position: absolute;*/
+    margin: auto;
+    padding-left: 20px;
+}
+
+.arrowDown {
+    padding-left: 7px;
+}
+
+.arrowUp {
+    padding-left: 7px;
+}
+
+.arrowWrap {
+    padding-left: 60px;
+    width: 120px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.uiTitle {
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+.uiTitle:hover {
+    cursor: pointer;
+}
+
+.playBut {
+    position: absolute;
+}
+
+.button:hover {
+    opacity: .5;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+#cruiseBut {
+
+}
+
+.reveal {
+    opacity: .5;
+}
+
+
+#appearing_div {
+    position: absolute;
+    left: 21%;
+    top: 16%
+    /*    z-index: 1000;*/
+}
+
+#video {
+    width: 740px;
+    height: 500px;
+    position: absolute;
+    top: -25%;
+}
+
+.navMenuTextContainer {
+    height 100%;
+    width 100%;
+    justify-content: center;
+    align-items: center;
+    display flex;
+}
+
+
+.navMenuContainer {
+    position: absolute;
+    right: 11%;
+    top: 38%;
+    display;
+    flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height: 210px;
+}
+
+.navMenuText {
+    text-align: right;
+    height: 81px;
+    font-family: "Blender Pro Thin" !important;
+    font-size: 36pt;
+    line-height: 70px;
+    letter-spacing: 7.5pt;
+    color: #efefef;
+    margin: auto;
+    opacity: .8;
+}
+
+/*
+.navMenuText:hover{
+    opacity: .9;
+    cursor: pointer;
+}
+*/
+
+.navMenuText {}
+
+.bgImage {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: .4;
+    width: 100%;
+    height: 100%;
+}
+
+.dud {
+    color: #757575;
+}
+
+
+.navMenuText {
+    /*
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+*/
+}
+
+.navNum {
+    color: #ed1c24;
+    font-family: "Blender Pro Thin" !important;
+    font-size: 10pt;
+    line-height: 81px;
+    margin: auto;
+    opacity: .7;
+}
+
+.navHover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.navNotHovered {
+    opacity: .5;
+}
+
+.navMenuNums {
+    position: absolute;
+    top: 37.5%;
+    right: 8%;
+}
+
+.bgContainer{
+    z-index: -11000;
+    width: 100%;
+    height: 100%;
+}
+.WL_bgLayer4 {
+    position: absolute;
+    opacity: .1;
+    height: 40px;
+    width: 40px;
+}
+.WL_bgLayer3 {
+    position: absolute;
+    opacity: .15;
+    height: 70px;
+    width: 70px;
+}
+.WL_bgLayer2 {
+    position: absolute;
+    opacity: .2;
+    height: 90px;
+    width: 90px;
+}
+.WL_bgLayer1 {
+    position: absolute;
+    opacity: .25;
+    height: 120px;
+    width: 120px;
+}
+.SR_BGLayer4 {
+    position: absolute;
+    opacity: .05;
+    height: 17px;
+    width: 50px;
+}
+.SR_BGLayer3 {
+    position: absolute;
+    opacity: .13;
+    height: 25px;
+    width: 75px;
+}
+.SR_BGLayer2 {
+    position: absolute;
+    opacity: .2;
+    height: 40px;
+    width: 120px;
+}
+.SR_BGLayer1 {
+    position: absolute;
+    opacity: .25;
+    height: 63px;
+    width: 190px;
+}
+.bgLayer{
+    transition: .5s transform, .5s opacity ease;
+    overflow: hidden;
+}
+
+
+.bgLayerHover{
+    transform: scale(1.05);
+    opacity: .5;
+}
+
+.bgGradient {
+    transform: scale(1.3);
+    z-index: -10000;
+    opacity: .5;
+}
+
+.bgImagesWrap {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -10000;
+    overflow: hidden;
+}
+
+.fadeOut{
+    opacity: 0;
+}
+.navMenu {
+    transition: .7s all ease;
+}
+
+.bgRow1{
+    animation-name: moveUpAndDown;
+    animation-delay: 0s;
+    animation-duration: 40s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes moveUpAndDown {
+    0%   {transform:translateY(0px); }
+    94%   {transform:translateY(-1190px);}
+    95% {transform:translateY(-1200px); opacity: .35;}
+    96% {transform:translateY(-1210px); opacity:0;}
+	100% {transform:translateY(0px); opacity: 0;}
+}
+.bgGrid {
+    z-index: -10000;
+    position: absolute;
+    top: 32%;
+    left: 0;
+/*    transform: translate (-50%, -50%);*/
+    opacity: .3;
+}
+
+.anonBGCode {
+    position: absolute;
+    opacity: .8;
+/*    width: 10px;*/
+}
+.anonCodeLayer4{
+    font-size: 1.5pt;
+    line-height: 3pt;
+}
+.anonCodeLayer3{
+    font-size: 3pt;
+    line-height: 6pt;
+}
+.anonCodeLayer2{
+    font-size: 4.5pt;
+    line-height: 7.5pt;
+}
+.anonCodeLayer1{
+    font-size: 8pt;
+    line-height: 10pt;
+}
+
+
+.typewriter {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap;
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 2s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+.navMenuRow {
+    top: 0;
+    left: 0;
+}
+
+.page {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 2s ease;
+/*    top: 100%;*/
+}
+
+.storyPage {
+    top: 100%;
+    left: 0;
+}
+
+.padding18 {
+    padding-top: 18.5%;
+}
+
+.paddingSmLeft {
+    padding-left: 45px;
+}
+
+.uiArrow:hover {
+    cursor: pointer;
+}
+
+.tempIMG {
+    position: absolute;
+    width: 740px;
+    height: 425px;
+    top: 15%;
+    left: -65%;
+    z-index: -100;
+}
+
+.tunisiaVideo {
+    opacity: .4;
+    padding-left: 10%;
+    padding-top: 5%;
+    width: 700px;
+}
+
+.padding30 {
+    padding-top: 23%;
+}
+
+.paddingLeft10 {
+    padding-left: 5%;
+}
+
+.endStoryBut {
+    text-decoration: underline;
+    text-decoration-color: #ed1c24;
+    text-underline-position: under;
+    font-family: "Blender Pro Thin" !important;
+    font-size: 13pt;
+    color: white;
+    opacity: .7;
+    transition: 1s all ease;
+}
+.endStoryBut:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.longTextBlock {
+    width: 900px !important;
+}
+
+.bodyTextPadding {
+    padding-left: 39px;
+}
+
+.uiElement {
+    z-index: 10000;
+}
