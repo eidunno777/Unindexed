@@ -15,8 +15,9 @@ body {
     display: inline-block;
     vertical-align: top;
     font-family: "Blender Pro Thin" !important;
-    font-size: 17.5pt;
-    line-height: 36pt;
+    font-size: 13pt;
+    line-height: 40pt;
+    letter-spacing: 1px;
     font-style: normal;
     color: #b2b2b2;
 }
@@ -124,6 +125,7 @@ body {
 
 .dateText {
     position: relative;
+    z-index: 2000;
     font-family: "Blender Pro Thin" !important;
     font-size: 9pt;
     line-height: 0pt;
@@ -220,7 +222,7 @@ body {
 
 .uiTitle {
     position: absolute;
-    left: 30px;
+    left: 40px;
     top: 30px;
 }
 .uiTitle:hover {
@@ -234,9 +236,10 @@ body {
 
 .button:hover {
     position: relative;
-    z-index: 2000;
+    z-index: 4000;
     opacity: .5;
     cursor: pointer;
+    object-fit: cover;
 }
 .button{
     width: 35px;
@@ -374,6 +377,7 @@ body {
     opacity: .1;
     height: 40px;
     width: 40px;
+    z-index: 300;
 }
 @keyframes opacity01 {
     0% { opacity: 0; }
@@ -387,6 +391,7 @@ body {
     opacity: .15;
     height: 70px;
     width: 70px;
+    z-index: 500;
 }
 @keyframes opacity015 {
     0% { opacity: 0; }
@@ -400,6 +405,7 @@ body {
     opacity: .2;
     height: 90px;
     width: 90px;
+    z-index: 900;
 }
 .WL_bgLayer1 {
     position: absolute;
@@ -409,6 +415,7 @@ body {
     opacity: .25;
     height: 120px;
     width: 120px;
+    z-index: 900;
 }
 .SR_BGLayer4 {
     position: absolute;
@@ -418,6 +425,7 @@ body {
     opacity: .05;
     height: 17px;
     width: 50px;
+    z-index: 300;
 }
 @keyframes opacity005 {
     0% { opacity: 0; }
@@ -431,6 +439,7 @@ body {
     opacity: .13;
     height: 25px;
     width: 75px;
+    z-index: 500;
 }
 @keyframes opacity013 {
     0% { opacity: 0; }
@@ -444,6 +453,7 @@ body {
     opacity: .2;
     height: 40px;
     width: 120px;
+    z-index: 500;
 }
 @keyframes opacity02 {
     0% { opacity: 0; }
@@ -457,6 +467,7 @@ body {
     opacity: .25;
     height: 63px;
     width: 190px;
+    z-index: 500;
 }
 @keyframes opacity025 {
     0% { opacity: 0; }
@@ -465,9 +476,10 @@ body {
 
 .bgLayer{
     overflow: hidden;
-    z-index: -100;
 }
+.bgLayer:hover{
 
+}
 .bgLayerHover{
     transform: scale(1.05);
     opacity: .5;
@@ -476,7 +488,7 @@ body {
 .bgGradient {
     transform: scale(1.3);
     z-index: -10000;
-    opacity: .6;
+    opacity: .7;
 }
 
 .bgImagesWrap {
@@ -486,14 +498,48 @@ body {
     z-index: -10000;
     overflow: hidden;
 }
-
+.opacity1{
+    opacity: 1;
+}
 .fadeOut{
     opacity: 0;
 }
+.fadeOutAndScale{
+    opacity: 0 !important;
+    animation: scaleDown ease 1.5s;
+}
+.fadeInAndScale{
+    opacity: 1 !important;
+    animation: scaleDown2 ease 1.5s;
+    animation-fill-mode: forwards;
+}
+.VideoFadeInAndScale{
+    opacity: 1 !important;
+    animation: scaleDownQuick ease 1.5s;
+    animation-fill-mode: forwards;
+}
+@keyframes scaleDownQuick{
+    0% {transform: scale(1.07);}
+    100% {transform: scale(1);}
+}
+@keyframes scaleDown2{
+    0% {transform: scale(1.1);}
+    100% {transform: scale(1);}
+}
+@keyframes scaleDown{
+    0% {transform: scale(1);}
+    100% {transform: scale(.9);}
+}
 .navMenu {
     transition: .7s all ease;
+    position: relative;
+    z-index: 2000;
 }
-
+.navPage{
+    transition: all ease 2s;
+/*    opacity: 0;*/
+/*    transform: scale(1.1);*/
+}
 .bgRow1{
     animation-name: moveUpAndDown;
     animation-delay: 0s;
@@ -573,7 +619,7 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    transition: all 2.4s ease;
+    transition: top 2.6s ease, opacity 1s ease;
 /*    top: 100%;*/
 }
 
@@ -657,7 +703,7 @@ body {
 }
 
 .longTextBlock {
-    width: 900px !important;
+    width: 1000px !important;
 }
 
 .bodyTextPadding {
@@ -673,11 +719,11 @@ body {
 }
 
 .assangeImg {
-    width: 450px;
-    height: 620px;
+    width: 390px;
+/*    height: 620px;*/
     position: absolute;
-    top: 12%;
-    left: 32%;
+    top: 16%;
+    left: 53%;
 }
 
 #icelandBut {
@@ -718,7 +764,7 @@ body {
     padding-left: 9px;
     padding-bottom: 0px;
     margin-bottom: 5px;
-    font-family: "Blender Pro Thin" !important;
+    font-family: "Blender Pro" !important;
     font-size: 9pt;
     font-style: normal;
     color: #c6c6c6;
@@ -746,15 +792,17 @@ body {
     width: 500px;
 }
 .captionText{
+    width: 200px;
     font-family: 'Nunito Sans', sans-serif;
     font-size: 7pt;
     line-height: 14pt;
     font-style: lighter; 
-    color: #999999;
+    color: #939393;
     width: 150px;
     padding-left: 9px;
     opacity: 0;
     transition: all ease 1s;
+    z-index: 2500;
 }
 .textColWrap {
     position: relative;
@@ -762,33 +810,39 @@ body {
 }
 
 .WL_collatCap {
+    position: relative;
+    padding-top: 10px;
+    left: -8px;
     opacity: 0;
+    width: 220px;
     transition: 1s ease all;
 }
 
 .WL_Vid {
     position: absolute;
     z-index: -1000;
+    opacity: 0;
+    transition: all ease 1.5s;
 }
 
 .WL_01 {
-    top: 23%;
-    left: -2%;
-    width: 400px;
-    -webkit-filter:brightness(0.6);
+    top: 9%;
+    left: 0%;
+    width: 380px;
+/*    -webkit-filter:brightness(1);*/
 }
 .WL_02 {
-    top: 40%;
-    left: 80%;
+    top: 80%;
+    left: 50%;
     width: 300px;
-    -webkit-filter:brightness(0.7);
+/*    -webkit-filter:brightness(0.7);*/
 }
 .WL_03 {
-    top: 10%;
-    left: 20%;
-    width: 400px;
+    top: 55%;
+    left: -2.3%;
+    width: 250px;
     z-index: -1020;
-    -webkit-filter:brightness(0.7);
+/*    -webkit-filter:brightness(0.8);*/
 }
 
 #bodyText_anon1 {
@@ -798,7 +852,6 @@ body {
 #bodyText_Anon02 {
     width: 390px;
     font-size: 9.7pt !important;
-    
 }
 
 .redBar {
@@ -806,20 +859,31 @@ body {
     top: 57%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 110%;
+    width: 0%;
     height: 1px;
     background-color: red;
-    animation: barGrow 4s ease-in 1s 1 normal;
+    opacity: 1;
+    transition: 4s ease-in width, 1s ease opacity;
+/*    animation: barGrow 4s ease-in 1s 1 normal;*/
 }
 
+/*
 @keyframes barGrow{
     0% {width: 0%;}
     100% {width: 100%;}
 }
+*/
 
 .introPage {
     top: 0px;
     left: 0px;
+}
+.introPage2{
+    top: 0px;
+    left: 0px;
+    transition: all ease 3s !important;
+    opacity: 0;
+    transform: scale(1.1);
 }
 
 .WL_iceland {
@@ -844,13 +908,14 @@ body {
 }
 
 .textShadowWrap {
+    width: 200px;
     position: relative;
     top: 0%;
     left: 2%;
 }
 
 .anon03_headerText {
-    width: 600px;
+    width: 420px;
 }
 
 .playBut_Payback {
@@ -875,10 +940,11 @@ body {
 
 .video {
     position: absolute;
-    z-index: 0;
+    z-index: 1000;
 }
 
 .WL05_bodyText {
+    margin-top: 3px;
     padding: 0 0 0 0 !important;
     width: 410px;
 }
@@ -910,7 +976,6 @@ body {
   position: relative;
   left:-.5%;
   margin-left: -1.9%;
-  
 }
 
 .quoteHeader::after{
@@ -940,7 +1005,6 @@ body {
 
 .SR_Vid {
     position: absolute;
-    z-index: -1;
 }
 
 #SR02_playBut {
@@ -951,15 +1015,15 @@ body {
 }
 
 .WL_04 {
-    top: 10%;
-    left: 50%;
-    width: 570px;
-    z-index: -1020;
-    -webkit-filter:brightness(0.7);
+    top: 6%;
+    left: 54%;
+    width: 660px;
+    z-index: 920;
+/*    -webkit-filter:brightness(0.85);*/
 }
 
 .WL04_bodyText {
-    width: 350px;
+    width: 380px;
 }
 
 .anon01_titleText {
@@ -993,15 +1057,16 @@ body {
 }
 
 .WL04_headerText {
-    width: 650px;
+    width: 810px;
+    line-height: 60px;
 }
 
-.WL035_quoteText {
+.WL_quoteText {
     width: 850px;
 }
 
 .SR04_headerText {
-    width: 745px;
+    width: 750px;
 }
 
 .padding20 {
@@ -1021,6 +1086,7 @@ body {
 /*    left: 265px;*/
 /*    top: -115px;*/
     margin: 0 0 0 39px;
+    margin-top: 12px;
     width: 80px !important;
 }
 
@@ -1047,6 +1113,7 @@ body {
 
 .WL03_buttonLabel {
     padding-left: 0px !important;
+    width: 125px;
 }
 
 .buttonTextWrap {
@@ -1118,4 +1185,121 @@ body {
 .img {
     position: relative;
     z-index: 1000;
+}
+
+.SR01_headerText {
+    width: 630px;
+}
+
+.WL_05 {
+    top: 57%;
+    left: 80%;
+    width: 220px;
+    z-index: 920;
+/*    -webkit-filter:brightness(0.9);*/
+}
+
+.navBut {
+    z-index: 2000;
+}
+
+.WL_06 {
+    top: 0%;
+    left: 24%;
+    width: 200px;
+    z-index: 1020;
+/*    -webkit-filter:brightness(0.7);*/
+}
+
+.babyHeaderText {
+    position: absolute;
+    z-index: 3000;
+    font-family: "Blender Pro Thin" !important;
+    font-size: 13pt;
+    letter-spacing: 2.5px;
+    font-style: normal;
+    color: #c6c6c6;
+    width: 90px;
+    opacity: 1;
+    transition: all 1s ease;
+    filter: brightness(.7);
+}
+
+.scrollIcon {
+    height: 50px;
+    position: absolute;
+    top: 69%;
+    left: 51.5%;
+    animation: scrollIconBounce 3s ease infinite;
+}
+@keyframes scrollIconBounce{
+    0%{transform: translateY(0px);}
+    15%{transform: translateY(-20px);}
+    30%{transform: translateY(0px);}
+    100%{transform: translateY(0px);}
+}
+.introPage2_bodyText {
+    position: absolute;
+    top: 49%;
+    left: 50%;
+    width: 560px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.SR_quoteText {
+    width: 950px
+}
+
+.anon_quoteText {
+   width: 806px;
+}
+
+.padding16 {
+    padding-top: 16%;
+}
+
+.navText3 {
+    width: 350px;
+    right: 25.5px;
+}
+
+.anon02_caption {
+    opacity: 1 !important;
+    width: 200px;
+    position: absolute;
+    left: 13%;
+    top: 49%;
+}
+
+.anon03_caption {
+    opacity: 1 !important;
+    width: 180px;
+    position: absolute;
+    left: 38%;
+    top: 66%;
+}
+
+.WL02_caption {
+    opacity: 1 !important;
+    width: 200px;
+    position: absolute;
+    left: 30%;
+    top: 68%;
+}
+
+.WL04_buttonLabel {
+    display: inline-block;
+    left: 36px;
+    top: -1px;
+    width: 145px;
+}
+
+.WL04_playBut {
+    position: relative;
+    left: 35px;
+}
+
+.padding15 {
+    padding-top: 15%;
 }

@@ -9,20 +9,18 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
     <link href="//db.onlinewebfonts.com/c/31b8101b7be4ea7380dd68f7ae18231d?family=Blender+Pro+Thin" rel="stylesheet" type="text/css" />
     <link href="//db.onlinewebfonts.com/c/335787aa6f57d71cabe8eb5dc89c6d6b?family=Blender+Pro" rel="stylesheet" type="text/css" />
-    <title>UNINDEXED</title>
+    <title>Unindexed</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
 </head>
-
 <body>
 <!--    <img class='bgImage' src="IMG/wikiPages/wikiPage5.png">-->
-    <img class="uiTitle uiElement" onClick="returnToNav()" src="IMG/UI/uiTitle.png" width="114" height="22">
+    <p class="uiTitle uiElement babyHeaderText" onClick="returnToNav()">UNINDEXED</p>
     <div class='bgImagesWrap'>
         <img class='bgGradient' src="IMG/UI/bgGradient.png">
     </div>
     <div class="sideNav">
         <div class='sideNavWrap'>
             <div class="progressWrap">
-                <!--                <p class='chapterText'>ANONYMOUS</p>-->
                 <img class="progressBar" src="IMG/UI/progressBar.png">
             </div>
             <div class="arrowWrap">
@@ -31,6 +29,7 @@
             </div>
         </div>
     </div>
+    
     <div id="main" class="container-fluid">
         <div class='codeBlockContainer' hidden>
             <p class="anonBGCode">????? ?????? ??? ??? ??? ??? ??? ????????? ??? ??? ?? <br><br>
@@ -94,11 +93,18 @@
             </p>
         </div>
         <div class="bgContainer"></div>
+        
         <div class="row page introPage" hidden>
             <div class="titleText">UNINDEXED</div>
             <div class="redBar"></div>
         </div>
-        <div class="row navMenuRow page" >
+        <div class="row page introPage2" hidden>
+            <p class="bodyText introPage2_bodyText">
+                The Dark Net offers users the power and freedom of complete Internet anonymity, and is accessible to anyone with just a Google search and a couple of clicks. What users choose to do with this freedom is up to them. This experience explores three stories that utilize the Dark Net in significantly different ways. 
+            </p>
+            <img class="scrollIcon" src="IMG/arrowIcon.png">
+        </div>
+        <div class="row navMenuRow navPage page">
             <div class="col-sm-6"></div>
 <!--            navMenuContainer contains hover width-->
             <div class="navMenuContainer col-sm-5">
@@ -133,6 +139,7 @@
         </div>
         <div class="row anonPage2 page storyPage">
             <div class="col-sm-6">
+                <p class="captionText anon02_caption">SP -  an abbreviation of Supressive Person, a term used in Scientology to describe "antisocial personalities." Many who end up leaving the church are labeled as SPs.</p>
                 <div id="appearing_div">
                     <video id="video" class='anon_Vid video' muted>
                         <source src="VIDEO/CRUISE_VID.mp4" type='video/mp4; codecs="avc1.42E01E"' />
@@ -164,6 +171,7 @@
             </div>
             <div class='col-sm-5'>
 <!--                <img src="IMG/paybackImg.png" class='tempIMG'>-->
+                <p class="captionText anon03_caption">Anonymous released this video shortly after the attacks. Anonymous almost always releases videos that explain what their motives and who their targets are.</p>
                 <video class="video anon_Vid anon_paybackVid" mute loop>
                     <source src="VIDEO/anonPayback.mp4" type='video/mp4; codecs="avc1.42E01E"' />
                 </video>
@@ -172,7 +180,7 @@
         <div class="row anonPage35 quotePage page storyPage">
             <div class="col-sm-1"></div>
             <div class="col-sm-6 padding21 paddingSmLeft">
-                <h2 class="quoteHeader anon035_quoteText">We are anonymous, we are legion,
+                <h2 class="quoteHeader anon_quoteText">We are anonymous, we are legion,
                     we do not forgive, we do not forget</h2>
                 <p class="quoteSignature anon03_quoteSignature"><span class="redDash">–</span> ANONYMOUS
                 </p>
@@ -195,7 +203,7 @@
         </div>
         <div class="row anonPage5 page storyPage">
             <div class="col-sm-1"></div>
-            <div class="col-sm-6 padding14 paddingSmLeft">
+            <div class="col-sm-6 padding16 paddingSmLeft">
                 <h2 class="medHeaderText longTextBlock">Over it's 20-year life span, Anonymous has grown from a simple 4chan community to a global movement that has defined hacktivism</h2>
                 <p class="bodyText bodyTextPadding anon05_bodyText">This incredible evolution could not have occured without the power and freedom provided by the darknet. The privacy ensured  sheilds the anons, allowing them to plan their attacks and employ illegal tactics to inflict actual damage on those who abuse their power *too unobjective?. Without this anonymity, the powerful targets of the attacks would surely punish the perpetrators. For many anons this would mean jail time, while for others it could even mean death. The darknet allows people to use the web however they choose, without fear of who’s watching; without this anonymity, their is no Anonymous. 
                 </p>
@@ -206,9 +214,9 @@
 
         <div class="row WL_Page1 page storyPage">
             <div class="col-sm-5">
-                <img class="assangeImg img" src="IMG/WIKILEAKS/WL_assange.png">
+<!--                <img class="assangeImg img" src="IMG/WIKILEAKS/WL_assange.png">-->
             </div>
-            <div class="col-sm-6 padding21 paddingMdLeft">
+            <div class="col-sm-6 padding24 paddingMdLeft">
                 <p class="dateText">2006</p>
                 <h2 class="medHeaderText">JULIAN ASSANGE FOUNDS WIKI LEAKS</h2>
                 <p class="bodyText">A non-profit website with the purposes of disseminating original documents from anonymous sources and leakers. The site leveraged the Tor network, creating a secure location for whistleblowers to safety expose the encroachment and corruption of state and corporate power.
@@ -217,8 +225,8 @@
         </div>
         <div class="row WL_Page15 quotePage page storyPage">
             <div class="col-sm-1"></div>
-            <div class="col-sm-6 padding23 paddingSmLeft">
-                <h2 class="quoteHeader WL035_quoteText">It is impossible to correct abuses unless we know that they’re going on.</h2>
+            <div class="col-sm-6 padding21 paddingSmLeft">
+                <h2 class="quoteHeader WL_quoteText">One of the best ways to achieve justice is to expose injustice.</h2>
                 <p class="quoteSignature anon03_quoteSignature"><span class="redDash">–</span> JULIAN ASSANGE
                 </p>
             </div>
@@ -233,7 +241,8 @@
                 </p><br>
             </div>
             <div class="col-sm-4 padding25 paddingMdLeft">
-                <video class="video WL_Vid WL_iceland" mute loop>
+                 <p class="captionText WL02_caption">Anonymous released this video shortly after the attacks. Anonymous almost always releases videos that explain what their motives and who their targets are.</p>
+                <video class="video WL_iceland" mute loop>
                     <source src="VIDEO/WL_iceland.mp4" type='video/mp4; codecs="avc1.42E01E"' />
                 </video>
             </div>
@@ -273,46 +282,54 @@
                         <p class="captionText WL_collatCap">Unbeknownst to the US forces, the van described in this excerpt of the transcript and photographed above contained a father and two of his children. The father was killed and the two children both seriously injured.</p>
                     </div>
                 </div>
-                <img class="collatImg img" src="IMG/WIKILEAKS/WL_Collat.png">
+                <img class="collatImg img" src="IMG/WIKILEAKS/WL_Collat.jpg">
             </div>
-            <div class="col-sm-6 padding17 paddingSmLeft">
+            <div class="col-sm-6 padding20 paddingSmLeft">
                 <p class="dateText">2010</p>
-                <h2 class="smHeaderText thinHeaderCol">WIKILEAKS LEAKS A CLASSIFIED VIDEO OF THE JULY 12 2007 BAGHDAD AIRSTRIKE, WHICH THEY TITLE: COLLATERAL MURDER</h2>
-                <p class="bodyText thinBodyCol">The video shows 39 minutes of U.S. military gunsight footage, in which Iraqi civilians and two Reuter journalists are killed. WikiLeaks also released a 17-minute version of the footage, edited down for maximum emotional impact. Following the video release, the attacks received worldwide coverage and controversy, with both the legality and morality of the attacks, as well as the manipulation of the footage by WikiLeaks coming into question.
+                <h2 class="biggishHeaderText thinHeaderCol">COLLATERAL MURDER</h2>
+                <p class="bodyText thinBodyCol">On April 5th WikiLeaks released a classified US military video depicting the indiscriminate slaying of over a dozen people in the Iraqi suburb of New Baghdad -- including two Reuters news staff. WikiLeaks released the full 39-minute video as wekk as a 17-minute version of the footage, edited down for maximum emotional impact. Following the video release, the attacks received worldwide coverage and controversy, with both the legality and morality of the attacks, as well as the manipulation of the footage by WikiLeaks coming into question.
                 </p>
             </div>
         </div>
         <div class="row WL_Page4 page storyPage">
-            <video class="WL_Vid WL_01 video" mute loop>
+            <video class="WL_Vid WL_01 video" hidden mute loop>
                 <source src="VIDEO/WL_01.mp4" type='video/mp4; codecs="avc1.42E01E"' />
             </video>
-            <video class="WL_Vid WL_02 video" mute loop>
+            <video class="WL_Vid WL_02 video" hidden mute loop>
                 <source src="VIDEO/WL_02.mp4" type='video/mp4; codecs="avc1.42E01E"' />
             </video>
-            <video class="WL_Vid WL_03 video" mute loop>
+            <video class="WL_Vid WL_03 video" hidden mute loop>
                 <source src="VIDEO/WL_03.mp4" type='video/mp4; codecs="avc1.42E01E"' />
             </video>
-            <video class="WL_Vid WL_04 video" mute loop>
+            <video class="WL_Vid WL_04 video" hidden mute loop>
                 <source src="VIDEO/WL_04.mp4" type='video/mp4; codecs="avc1.42E01E"' />
             </video>
-            <div class="col-sm-2"></div>
-            <div class="col-sm-6 padding18">
+            <video class="WL_Vid WL_05 video" hidden mute loop>
+                <source src="VIDEO/WL_05.mp4" type='video/mp4; codecs="avc1.42E01E"' />
+            </video>
+            <video class="WL_Vid WL_06 video" hidden mute loop>
+                <source src="VIDEO/WL_06.mp4" type='video/mp4; codecs="avc1.42E01E"' />
+            </video>
+             <div class="col-sm-2"></div>
+            <div class="col-sm-6 padding16">
                 <p class="dateText">2010</p>
-                <h2 class="medHeaderText WL04_headerText">WIKILEAKS RELEASES THE LARGEST LEAK
+                <h2 class="smBigHeaderText WL04_headerText">WIKILEAKS RELEASES THE LARGEST LEAK
                     OF CLASSIFIED DOCUMENTS IN HISTORY</h2>
-                <p class="bodyText">
-                    92,000 documents related to the war in Afghanistan and 400,000 documents related to the war Iraq War. The documents revealed a real and uncensored story of both wars. Detailing thousands of unreported civilian causalities, evidence of torture as well as other war crimes. The US condemned these leaks, and suggesting the disclosures put lives at risk and gives adversaries valuable information.
-                </p><br>
+                <p class="bodyText WL04_bodyText">
+                    92,000 documents related to the war in Afghanistan and 400,000 documents related to the war Iraq War. The documents revealed a real and uncensored story of both wars. Detailing thousands of unreported civilian causalities, evidence of torture as well as other war crimes. The U.S. condemned these leaks, and suggesting the disclosures put lives at risk and gives adversaries valuable information. 
+                </p>
+                <img class="button WL04_playBut" onclick="revealWLVideos()" src="IMG/UI/playBut.png">
+                <p class="buttonLabel WL04_buttonLabel">REACTIONS FROM U.S.A.</p>
             </div>
             <div class="col-sm-4 padding21 paddingMdLeft"></div>
         </div>
         <div class="row WL_Page5 page storyPage">
             <div class="col-sm-1"></div>
-            <div class="col-sm-5 padding165 paddingSmLeft">
+            <div class="col-sm-5 padding15 paddingSmLeft">
                  <h2 class="quoteHeader WL05_quote">It is impossible to correct abuses unless we know that they’re going on.</h2>
 <!--                <h2 class="quoteHeader WL05_quote">IT IS IMPOSSIBLE TO CORRECT ABUSES UNLESS WE KNOW THEY'RE GOING ON.</h2>-->
                  <div class="inlineContainer">
-                    <p class="quoteSignatureText">-JULIAN ASSANGE</p>
+                    <p class="quoteSignatureText"><span class="redDash">–</span>JULIAN ASSANGE</p>
                     <div class="rightContainer">
                         <p class="bodyText WL05_bodyText">Despite all these controversies, WikiLeaks created the technology that allows for whistleblowers to safely expose the corruption of state and corporate power, and for that they must be commeded. *(Their system of utilizing Tor to allow for anonymous communication between them and the whistleblower) This system has since been modeled and put into use by The New York Times, The Guardian* as well as other major media outlets.
                         </p>
@@ -329,7 +346,7 @@
             </div>
             <div class="col-sm-6 padding17 paddingMdLeft">
                 <p class="dateText">2010</p>
-                <h2 class="smHeaderText">ROSS ULBRICT BEGINS DEVELOPING SILK ROAD </h2>
+                <h2 class="smHeaderText SR01_headerText">ROSS ULBRICT BEGINS DEVELOPING SILK ROAD </h2>
                 <p class="bodyText">At the age of 26, Ulbrict - a libretarian idealist from Texas - began buidling the website Silk Road. He envisioned the site as a free market experiment with an emphasis on user anonymity. To achieve this, Ulbrict planned to host the site on the darknet, making communition between users entirely anonymous. Additionally, Ulbrict designed the site to only handle transactions made in bitcoin, offering a level of anonymity far greater than any other form of currency or credit card. As a result, Silk Road’s existence would be completely outside the scope of government control, allowing users to buy or sell almost anything.
                 </p>
             </div>
@@ -354,7 +371,7 @@
         <div class="row SR_Page25 quotePage page storyPage">
             <div class="col-sm-1"></div>
             <div class="col-sm-6 padding22 paddingSmLeft">
-                <h2 class="quoteHeader WL035_quoteText">People should have the right to buy and sell whatever they wanted so long as they aren't hurting anyone</h2>
+                <h2 class="quoteHeader SR_quoteText">People should have the right to buy and sell whatever they wanted so long as they aren't hurting anyone</h2>
                 <p class="quoteSignature anon03_quoteSignature"><span class="redDash">–</span> ROSS ULBRICT
                 </p>
             </div>
@@ -364,7 +381,7 @@
             <div class="col-sm-5">
 <!--                <img class="rossImg" src="IMG/WIKILEAKS/SR_ross.png">-->
             </div>
-            <div class="col-sm-6 padding24 paddingMdLeft">
+            <div class="col-sm-6 padding24 paddingBigLeft">
                 <p class="dateText SR03_dateText">2010</p>
 <!--                <h2 class="smHeaderText">ROSS ULBRICT BEGINS DEVELOPING SILK ROAD </h2>-->
                 <p class="bodyText">Despite creating terms of service that were more prohibitive than other dark web markets, Ulbricht became unwilling or unable to maintain the standards that he had initially set, and as the site evolved, more and more dangerous products, including heroin, guns, and fentanyl, began to be listed. All these listings were easily accessbile to everyone of all ages, all you needed was a shipping address and a bitcoin account.
@@ -385,7 +402,7 @@
         </div>
         <div class="row SR_Page5 page storyPage">
             <div class="col-sm-1"></div>
-            <div class="col-sm-6 padding17 paddingSmLeft">
+            <div class="col-sm-6 padding16 paddingSmLeft">
                 <p class="dateText">TODAY</p>
                 <h2 class="medBigHeaderText SR04_headerText">THE END OF ONLINE BLACK MARKETS?</h2>
                 <div class="bodyTextWrap SR05_container">
@@ -444,6 +461,8 @@
 <script src="js/lottie.js"></script>
 <script src="//cdn.jsdelivr.net/npm/velocity-animate@1.5/velocity.min.js"></script>
 <script>
+//    document.getElementsByClassName('redBar').style.webkitAnimationPlayState = "paused";
+    
     
     var navClicked = false;
     var pageNumber = -1;
@@ -515,16 +534,31 @@
             setTimeout(function(){
                 currentlyScrolling = false;
             }, 1200);
-            
+
             $(pageClassList[pageNumber]).css("top", "-100%");
             $(pageClassList[pageNumber + 1]).css("top", "0%");
             pageNumber++;
-            
+
             //if page hasnt been visited yet
             if(visitedPages[pageNumber] == false){
                 visitedPages[pageNumber] = true;
-                var pageVids = $(pageClassList[pageNumber]).find('.video');
                 console.log(pageClassList[pageNumber]);
+                //quote scramble
+                if(pageClassList[pageNumber] == ".SR_Page25"){
+                    console.log('boo');
+                    fSR_quote.setText(phrases5[counter]);
+                    counter = (counter + 1) % phrases5.length
+                }
+                else if (pageClassList[pageNumber] == ".anonPage35"){
+                    fAnon_quote.setText(phrases7[counter]);
+                    counter = (counter + 1) % phrases7.length
+                }
+                else if (pageClassList[pageNumber] == ".WL_Page15"){
+                     fWL_quote.setText(phrases6[counter]);
+                    counter = (counter + 1) % phrases6.length
+                }
+                
+                var pageVids = $(pageClassList[pageNumber]).find('.video');
                 for(var i = 0; i < pageVids.length; i++){
                     pageVids[i].play();
                 }
@@ -532,44 +566,91 @@
         }
         revealVid($(pageClassList[pageNumber]).attr("id"));
     }
+    
+    var WL_vids = [".WL_04", ".WL_01", ".WL_02", ".WL_05", ".WL_06", ".WL_03"];
+    var vidRevealInterval = 0;
+    var vidsRevealed = false;
 
+    function revealWLVideos(){
+        if(vidsRevealed == false){
+            $(WL_vids[0]).attr("hidden", false);
+            $(WL_vids[0]).addClass('VideoFadeInAndScale');  
+            setTimeout(function(){
+                $(WL_vids[1]).attr("hidden", false);
+                $(WL_vids[1]).addClass('VideoFadeInAndScale');  
+            }, 500);
+            setTimeout(function(){
+                $(WL_vids[2]).attr("hidden", false);
+                $(WL_vids[2]).addClass('VideoFadeInAndScale');  
+            }, 1000);
+            setTimeout(function(){
+                $(WL_vids[3]).attr("hidden", false);
+                $(WL_vids[3]).addClass('VideoFadeInAndScale');  
+            }, 1500);
+            setTimeout(function(){
+                $(WL_vids[4]).attr("hidden", false);
+                $(WL_vids[4]).addClass('VideoFadeInAndScale');  
+            }, 2000);
+            setTimeout(function(){
+                $(WL_vids[5]).attr("hidden", false);
+                $(WL_vids[5]).addClass('VideoFadeInAndScale');  
+            }, 2500);
+            vidsRevealed = true;
+        }
+    }
+    
     //scrolling event listener
     var midScroll = false;
     document.addEventListener("wheel", function(e) {
-        if (pageNumber != -1) {
-            var variation = parseInt(e.deltaY);
-            //scroll down - next page in story
-            if (variation > 0) {
-                if (midScroll == false) {
-                    pageDown();
-                    console.log('scroll down');
-                    midScroll = true;
-                    //2s limitation bw each scroll
-                    setTimeout(function() {
-                        midScroll = false;
-                    }, 1200);
+        if(onIntroPage2 == true){
+            onIntroPage2 = false;
+            var introPage2 = $('.introPage2');
+            $(introPage2).removeClass('fadeInAndScale');
+            fadeOutAndReset(introPage2);
+            setTimeout(function(){
+                $('.navMenuRow').prop('hidden', false);
+                $('.navPage').addClass("fadeInAndScale");
+                next();
+            }, 900);
+        }
+        else{
+            if (pageNumber != -1) {
+                var variation = parseInt(e.deltaY);
+                //scroll down - next page in story
+                if (variation > 0) {
+                    if (midScroll == false) {
+                        pageDown();
+                        console.log('scroll down');
+                        midScroll = true;
+                        //2s limitation bw each scroll
+                        setTimeout(function() {
+                            midScroll = false;
+                        }, 1200);
+                    }
                 }
-            }
-            //scroll up - prev page in story
-            else if (pageNumber != 5) {
-                if (midScroll == false) {
-                    pageUp();
-                    console.log('scroll up');
-                    midScroll = true;
-                    //2s limitation bw each scroll
-                    setTimeout(function() {
-                        midScroll = false;
-                    }, 2000);
+                //scroll up - prev page in story
+                else if (pageNumber != 5) {
+                    if (midScroll == false) {
+                        pageUp();
+                        console.log('scroll up');
+                        midScroll = true;
+                        //2s limitation bw each scroll
+                        setTimeout(function() {
+                            midScroll = false;
+                        }, 2000);
+                    }
                 }
             }
         }
     });
-
-    $( "video" ).hover(
+    
+    $(".video").hover(
       function() {
+        $(this).animate({volume: .9}, 700);
         $( this ).prop('muted', false); //mute
       }, function() {
-        $( this ).prop('muted', true); //unmute
+        $(this).animate({volume: 0}, 700);
+//        $( this ).prop('muted', true); //unmute
       }
     );
     //    ****
@@ -578,17 +659,17 @@
 //        $(WL_Vids[i]).get(0).play();
 //    }
     
-    //mute all videos for sanitys sake
-//    var allVids = $(document).find(".video");
-//    for(var i = 0; i < allVids.length; i++){
-//        $(allVids[i]).prop('muted', true); //mute
-//    }
+//    mute all videos for sanitys sake
+    var allVids = $(document).find(".video");
+    for(var i = 0; i < allVids.length; i++){
+        $(allVids[i]).prop('muted', true); //mute
+    }
     
     function returnToNav() {
         pageNumber = -1;
         location.reload();
     }
-
+    
     //    var animation = bodymovin.loadAnimation({
     //        container: document.getElementById('navMenuAnim'),
     //        renderer: 'svg',
@@ -744,27 +825,47 @@
     // ——————————————————————————————————————————————————
 
     //questions to figure out:
-    //how to make this not effects children elements text
-    //how to change speed of scrample
     //how to stop looping - SetTimeout
     class TextScramble {
+        //text scramble object has class of element to scramble innerHTML of, chars to scramble with and update method(?)
         constructor(el) {
             this.el = el
-            this.chars = '!<>-_\\/[]{}—=+*^?#'
+            this.chars = '!<>-_\\/[]{}—=+*^?#ABQCEURI18492047'
             this.update = this.update.bind(this)
         }
         setText(newText) {
             //            const oldText = this.el.childNodes[0].innerText;
+            
+            //take innerHTML of class passed into constructor
             const oldText = this.el.innerText;
-            //max of these 2 numbers
+            //max of og innerHTML and newScrambledText
             const length = Math.max(oldText.length, newText.length)
+            //???
             const promise = new Promise((resolve) => this.resolve = resolve)
             this.queue = []
+            
             for (let i = 0; i < length; i++) {
                 const from = oldText[i] || ''
                 const to = newText[i] || ''
-                const start = Math.floor(Math.random() * 40)
-                const end = start + Math.floor(Math.random() * 40)
+                const start = Math.floor(Math.random() * 0);
+                var end;
+                if (newText == "UNINDEXED"){
+                    console.log('hi');
+                    //by altering this changes length of scramble
+//                    end = start + Math.floor(Math.random() * 100);
+                    //should manually set unindexed reveal times
+                    if(i == 5){
+                        end = 190;
+                    }
+                    else{
+                        end =  Math.floor(Math.random() * ((175-50)+1) + 50);
+                    }  
+                    console.log(end);
+                }
+                else{
+                    console.log('bye');
+                    end =  Math.floor(Math.random() * ((155-30)+1) + 30);
+                }
                 this.queue.push({
                     from,
                     to,
@@ -774,9 +875,7 @@
             }
             cancelAnimationFrame(this.frameRequest)
             this.frame = 0
-            //            setTimeout(function(){
             this.update();
-            //            }, 500);
             return promise
         }
         update() {
@@ -794,7 +893,8 @@
                     complete++
                     output += to
                 } else if (this.frame >= start) {
-                    if (!char || Math.random() < 0.28) {
+                    //changes speed of scramble
+                    if (!char || Math.random() < 0.1) {
                         char = this.randomChar()
                         this.queue[i].char = char
                     }
@@ -818,7 +918,7 @@
     }
 
     // 
-    // Text Scramble Example
+    // Example
     // 
 
     const phrases1 = [
@@ -833,8 +933,20 @@
     const phrases4 = [
         'UNINDEXED'
     ]
-     
+    const phrases5 = [
+        "People should have the right to buy and sell whatever they wanted so long as they aren't hurting anyone"
+    ]
+    const phrases6 = [
+        "One of the best ways to achieve justice is to expose injustice."
+    ]
+    const phrases7 = [
+        "We are anonymous, we are legion, we do not forgive, we do not forget"
+    ]
+    
     const title = document.querySelector('.titleText');
+    const SR_quote = document.querySelector('.SR_quoteText');
+    const WL_quote = document.querySelector('.WL_quoteText');
+    const anon_quote = document.querySelector('.anon_quoteText');
     const silkRoad = document.querySelector('.navText1');
     const wikiLeaks = document.querySelector('.navText2');
     const anon = document.querySelector('.navText3');
@@ -842,28 +954,13 @@
     const fSilkRoad = new TextScramble(silkRoad);
     const fWikiLeaks = new TextScramble(wikiLeaks);
     const fAnon = new TextScramble(anon);
+    const fSR_quote = new TextScramble(SR_quote);
+    const fWL_quote = new TextScramble(WL_quote);
+    const fAnon_quote = new TextScramble(anon_quote);
     const fTitle = new TextScramble(title);
 
     let counter = 0
     const next = () => {
-        //        //PHRASE1
-        //        //sets time in between iterations of scramble
-        //        fSilkRoad.setText(phrases1[counter]).then(() => {
-        //            setTimeout(next, 2000)
-        //        })
-        //        //for multiple phrases
-        //        counter = (counter + 1) % phrases1.length
-        //        //PHRASE2
-        //        fWikiLeaks.setText(phrases2[counter]).then(() => {
-        //            setTimeout(next, 2000)
-        //        })
-        //        counter = (counter + 1) % phrases2.length
-        //        //PHRASE3
-        //        fAnon.setText(phrases3[counter]).then(() => {
-        //            setTimeout(next, 2000)
-        //        })
-        //        counter = (counter + 1) % phrases3.length
-
         //PHRASE1
         //sets time in between iterations of scramble
         fSilkRoad.setText(phrases1[counter]);
@@ -876,19 +973,52 @@
         fAnon.setText(phrases3[counter]);
         counter = (counter + 1) % phrases3.length
         
+    }
+        
+    
+    // ——————————————————————————————————————————————————
+    // Intro/Transition Animation
+    // ——————————————————————————————————————————————————
+    
+    var onIntroPage2 = false;
+    var introPage = $(".introPage");
+    function fadeOutAndReset(currentPage){
+        var pageElements = $(currentPage).children();
+        for(var i = 0; i < pageElements.length; i++){
+//            $(pageElements[i]).addClass("fadeOut");
+        }
+        $(currentPage).addClass("fadeOutAndScale");
+        setTimeout(function(){
+            $(currentPage).prop('hidden', true);
+        }, 1000);
+    }
+    
+    function introAnim(){
+        $(".redBar").css('width', '110%');
         fTitle.setText(phrases4[counter]);
         counter = (counter + 1) % phrases4.length
+        
+        //fadeOut/scaleDown titlePage and hide
+        setTimeout(function(){
+            fadeOutAndReset(introPage);
+        }, 4000);
+        
+        //unhide and fadeIn/scaleDown
+        setTimeout(function(){
+            $('.introPage2').addClass("fadeInAndScale");
+             setTimeout(function(){
+                 onIntroPage2 = true;
+             }, 500);
+        }, 4500);
     }
-    next();
-
-
+    introAnim();
+    
 
     // ——————————————————————————————————————————————————
     // BG Generation / Movement
     // ——————————————————————————————————————————————————
 
     var navHovering = false;
-    
     $('.navMenu').mouseenter(navMouseEnter).mouseleave(navMouseLeave);
     
     function navMouseEnter() {
@@ -900,6 +1030,7 @@
             $(".nav1").addClass("navHover");
             $(".nav2").addClass("navNotHovered");
             $(".nav3").addClass("navNotHovered");
+//            clearWrongBG();
         }
         if (navNum == 'nav2') {
             navNumNode = document.querySelector(".navNum2");
@@ -1145,6 +1276,5 @@
             bgGenerated = false;
         }
     }
-    for (var i = 0; i < 50; i++) {}
 
 </script>
