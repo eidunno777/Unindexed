@@ -1,0 +1,1322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,  maximum-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+    <link href="//db.onlinewebfonts.com/c/31b8101b7be4ea7380dd68f7ae18231d?family=Blender+Pro+Thin" rel="stylesheet" type="text/css" />
+    <link href="//db.onlinewebfonts.com/c/335787aa6f57d71cabe8eb5dc89c6d6b?family=Blender+Pro" rel="stylesheet" type="text/css" />
+    <title>Unindexed</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+</head>
+
+<body>
+    <!--    <img class='bgImage' src="IMG/anonPages/anonVIdeos.png">-->
+    <p class="uiTitle uiElement babyHeaderText" onClick="returnToNav()">UNINDEXED</p>
+    <div class='bgImagesWrap'>
+        <img class='bgGradient' src="IMG/UI/bgGradient.png">
+    </div>
+    <div class="sideNav">
+        <div class='sideNavWrap'>
+            <div class="progressWrap">
+                <img class="progressBar" src="IMG/UI/progressBar.png">
+            </div>
+            <div class="arrowWrap">
+                <img class="uiArrow arrowUp" src="IMG/UI/arrowUp.png" height="18" width="18" onClick='pageUp()'>
+                <img class="uiArrow arrowDown" src="IMG/UI/arrowDown.png" height="18" width="18" onClick='pageDown()'>
+            </div>
+        </div>
+    </div>
+    <div id="main" class="container-fluid">
+        <div class='codeBlockContainer' hidden>
+            <p class="anonBGCode">????? ?????? ??? ??? ??? ??? ??? ????????? ??? ??? ?? <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;????? ?????? ??? ??? ??? ??? ??? ????????? ??? ??? ?? <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;??? ??? ??? ??? ????????? ??? ??? ?? <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;??? ??? ??? ??? ????????? ??? ??? ?? <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;???????????? ? ??? ??? ??? ??? ??? ??? ??? ?? <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;??????????????? ????? ????? ? ??? ??? ??? ??? ??? ??? ??? ?? <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;??????????????? ????? ????? ? ??? ????? ?? <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;????????? ????? ? ??? ????? ?? <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;????? ?????? ??? ??? ??? ??? ??? ????????? ??? ??? ? <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;????? ?????? ??? ??? ??? ??? ??? ????????? ??? ????????? ??? ??? ?????? ??? ??? ??? <br>
+                ??????????????? ????? ????? ???? ??? ??? ??? ??? ??? ??? ??? ??? ?? <br>
+                ??????????????? ????? ????? ? ??? ??? ??? ??? ??? ??? ??? ?? <br> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;????? ?????? ??? ??? ??? ??? ??? ????????? ??? ??? ?? <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;????? ?????? ????? ???????????? ???????????????????????????????????????? <br>
+                ??????????????? ????? ????? ? ??? ??? ??? ??? ??? ??? ??? ?? <br>
+            </p>
+            <p class="anonBGCode">????? ?????? ??? ??? ??? ??? ??? ????????? ??? ??? ?? <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;????? ?????? ??? ??? ??? ??? ??? ????????? ??? ??? ?? <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;??? ??? ??? ??? ????????? ??? ??? ?? <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;??? ??? ??? ??? ????????? ??? ??? ?? <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;??????????????? ????? ????? ? ??? ??? ??? ??? ??? ??? ??? ?? <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;????? ?????? ??? ??? ??? ??? ??? ????????? ??? ??? ? <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;????? ?????? ??? ??? ??? ??? ??? ????????? ??? ????????? ??? ??? ?????? ??? ??? ??? <br>
+                ??????????????? ????? ????? ???? ??? ??? ??? ??? ??? ??? ??? ??? ?? <br>
+                ??????????????? ????? ????? ? ??? ??? ??? ??? ??? ??? ??? ?? <br> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;????? ?????? ??? ??? ??? ??? ??? ????????? ??? ??? ?? <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;????? ?????? ????? ???????????? ???????????????????????????????????????? <br>
+                ??????????????? ????? ????? ? ??? ??? ??? ??? ??? ??? ??? ?? <br>
+            </p>
+            <p class="anonBGCode">?????? ??? ??? ??? ????????? ??? ??? ?? <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;????? ?????? ??? ??? ??? ??? ??? ????????? ??? ??? ?? <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;??? ??? ??? ??? ????????? ??? ??? ?? <br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;??? ??? ??? ??? ????????? ??? ??? ?? <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;??????????????? ????? ????? ? ??? ??? ??? ??? ??? ??? ??? ?? <br><br>
+                ????? ?????? ??? ??? ??? ??? ??? ????????? ??? ??? ?
+
+            </p>
+            <p class="anonBGCode">
+                ????? ?????? ??? ??? ??? ??? ??? ????????? ??? ??? ? <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;????? ?????? ??? ??? ??? ??? ??? ????????? ??? ????????? ??? ??? ?????? ??? ??? ??? <br>
+                ??????????????? ????? ????? ???? ??? ??? ??? ??? ??? ??? ??? ??? ?? <br>
+                ??????????????? ????? ????? ? ??? ??? ??? ??? ??? ??? ??? ?? <br> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;????? ?????? ??? ??? ??? ??? ??? ????????? ??? ??? ?? <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;????? ?????? ????? ???????????? ???????????????????????????????????????? <br>
+                ??????????????? ????? ????? ? ??? ??? ??? ??? ??? ??? ??? ?? <br>
+            </p>
+            <p class="anonBGCode">
+
+                ??????????????? ????? ????? ? ??? ??? ??? ??? ??? ??? ??? ?? <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;????? ? ??? ??? ??? ????????? ??? ??? ?? <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;????? ?????? ????? ???????????????????????????????????????? <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;????? ?????? ??? ??? ??? ??? ??? ????????? ??? ??? ?? <br>
+                ??????????????? ????? ????? ? ??? ??? ??? ??? ??? ??? ??? ?? <br>
+            </p>
+            <p class="anonBGCode">
+                ??????????????? ????? ????? ? ??? ??? ??? ??? ??? ??? ??? ?? <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;????? ? ??? ??? ??? ????????? ??? ??? ?? <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;????? ?????? ??? ??? ??? ??? ??? ????????? ??
+            </p>
+        </div>
+        <div class="bgContainer"></div>
+
+        <div class="row page introPage" hidden>
+            <div class="titleText">UNINDEXED</div>
+            <div class="redBar"></div>
+        </div>
+        <div class="row page introPage2" hidden>
+            <p class="bodyText introPage2_bodyText">
+                The Dark Net offers users the power and freedom of complete Internet anonymity, and is accessible to anyone with just a Google search and a couple of clicks. What users choose to do with this freedom is up to them. This experience explores three stories that utilize the Dark Net in significantly different ways.
+            </p>
+<!--            <img class="scrollIcon" src="IMG/arrowIcon.png">-->
+        </div>
+        <div class="row navMenuRow navPage page">
+            <div class="col-sm-6"></div>
+            <!--            navMenuContainer contains hover width-->
+            <div class="navMenuContainer col-sm-5">
+                <div class='silkRoadNavMenu' onclick="startStory(this)">
+                    <div class="navText1 navMenuText nav1 navMenu">SILK ROAD
+                    </div>
+                </div>
+                <div class='wikiLeaksNavMenu' onclick="startStory(this)">
+                    <div class="navText2 navMenuText nav2 navMenu">WIKILEAKS
+                    </div>
+                </div>
+                <div class='anonNavMenu' onclick="startStory(this)">
+                    <div class="navText3 navMenuText nav3 navMenu">ANONYMOUS
+                    </div>
+                </div>
+            </div>
+            <div class="navMenuNums">
+                <div class='navNum1 navNum nav1 navMenu'>01</div>
+                <div class='navNum2 navNum nav2 navMenu'>02</div>
+                <div class='navNum3 navNum nav3 navMenu'>03</div>
+            </div>
+        </div>
+
+        <div class="row anonPage1 page storyPage">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-6 padding21 paddingSmLeft">
+                <p class="dateText">2003</p>
+                <h2 class="bigHeaderText anon01_titleText">ANONYMOUS FIRST ORIGINATES ON 4CHAN</h2>
+                <p id="bodyText_anon1" class="bodyText">4chan is an imageboard website where posts generally have anonymous authors. The concept of Anonymous began as a decentralized community on 4chan that would act anonymously in a coordinated manner. These coordinated efforts were usually toward a loosely self-agreed goal that was primarily for entertainment purposes (or lulz). In the next 15 years this small and largely immature 4chan community would evolve into an international hactivist group.
+                </p>
+            </div>
+        </div>
+        <div class="row anonPage2 page storyPage">
+            <div class="col-sm-6">
+                <p class="captionText anon02_caption">SP - an abbreviation of Supressive Person, a term used in Scientology to describe "antisocial personalities." Many who end up leaving the church are labeled as SPs.</p>
+                <div id="appearing_div">
+                    <video id="video" class='anon_Vid video' muted>
+                        <source src="VIDEO/CRUISE_VID.mp4" type='video/mp4; codecs="avc1.42E01E"' />
+                    </video>
+                    <canvas width="1040" height="720" id="buffer" style="display:none"></canvas>
+                    <canvas width="640" height="360" id="output"></canvas>
+                </div>
+            </div>
+            <div class="col-sm-6 padding18 paddingLeft">
+                <p class="dateText">2008</p>
+                <h2 class="smBigHeaderText">PROJECT CHANOLOGY</h2>
+                <!--                <img id="cruiseBut" class="button playBut" src="IMG/UI/playBut.png" height="38" width="38">-->
+                <div class="textShadowWrap">
+                    <div class="textShadow anon_02_shadow"></div>
+                    <p id="bodyText_Anon02" class="bodyText">After a video leaked of Tom Cruise gushing about his total devotion to the doctrines of The Church of Scientology, the Internet and 4chan users in praticular had a field day making memes of the video. However, the church began trying to expunge the video from the Internet; sending legal nastygrams to anyone hosting or sharing it. The anons were so enraged by this attempt at censorship that they set out to inflict as much damage as possible on the church. So began Project Chanology, in which the anons wanted not only the lulz, but also for those lulz to have a real-world effect. In dedicating themselves to that latter goal, Anonymous began to develop a real political consciousness.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row anonPage3 page storyPage">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-6 padding18 paddingSmLeft">
+                <p class="dateText">2010</p>
+                <h2 class="smBigHeaderText anon03_headerText">OPERATION PAYBACK<br></h2>
+                <p class="bodyText anon03_bodyText">After WikiLeak's release of hundreds of thousands of confidential U.S. documents, the three companies began blocking payments to the site for alleged terms-of-service violations. The action struck many anons as a transparent attempt to hobble Julian Assange's whistle-blowing organization. So began Operation Payback, in which anons used illegal DDoS attacks to take down the websites of MasterCard and Visa and briefly slow down PayPal to a crawl. In order to avoid jail time, the anons planned and carried out these attacks using the anonymity provided by the darknet.
+                </p>
+                <!--                <img class="button playBut playBut_Payback" src="IMG/UI/playBut.png" height="38" width="38">-->
+
+            </div>
+            <div class='col-sm-5'>
+                <!--                <img src="IMG/paybackImg.png" class='tempIMG'>-->
+                <p class="captionText anon03_caption">Anonymous released this video shortly after the attacks. Anonymous almost always releases videos that explain what their motives and who their targets are.</p>
+                <video class="video anon_Vid anon_paybackVid" mute loop>
+                    <source src="VIDEO/anonPayback.mp4" type='video/mp4; codecs="avc1.42E01E"' />
+                </video>
+            </div>
+        </div>
+        <div class="row anonPage35 quotePage page storyPage">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-6 padding21 paddingSmLeft">
+                <h2 class="quoteHeader anon_quoteText">We are anonymous, we are legion,
+                    we do not forgive, we do not forget</h2>
+                <p class="quoteSignature anon03_quoteSignature"><span class="redDash">–</span> ANONYMOUS
+                </p>
+            </div>
+            <div class='col-sm-5'></div>
+        </div>
+        <div class="row anonPage4 page storyPage">
+            <div class="col-sm-6 padding30 paddingLeft10">
+                <video class="anon_Vid anon_01 video" mute loop>
+                    <source src="VIDEO/anon_01.mp4" type='video/mp4; codecs="avc1.42E01E"' />
+                </video>
+                <video class="anon_Vid anon_02 video" mute loop>
+                    <source src="VIDEO/anon_02.mp4" type='video/mp4; codecs="avc1.42E01E"' />
+                </video>
+                <video class="anon_Vid anon_03 video" mute loop>
+                    <source src="VIDEO/anon_03.mp4" type='video/mp4; codecs="avc1.42E01E"' />
+                </video>
+                <video class="anon_Vid anon_04 video" mute loop>
+                    <source src="VIDEO/anon_04.mp4" type='video/mp4; codecs="avc1.42E01E"' />
+                </video>
+                <video class="anon_Vid anon_05 video" mute loop>
+                    <source src="VIDEO/anon_05.mp4" type='video/mp4; codecs="avc1.42E01E"' />
+                </video>
+                <video class="anon_Vid anon_06 video" mute loop>
+                    <source src="VIDEO/anon_06.mp4" type='video/mp4; codecs="avc1.42E01E"' />
+                </video>
+            </div>
+            <div class="col-sm-6 padding26 paddingLeft10">
+                <p class="dateText">2012</p>
+                <h2 class="biggestHeaderText">FREEDOM OPS</h2>
+                <!--                <img id="tunisiaBut" class="button playBut" src="IMG//UI/playBut.png" height="38" width="38">-->
+                <p class="bodyText">During the Arab Spring, Anonymous provided support to the For the first time, Anonymous had gotten on the winning side of a real fight, and it liked the feeliDuring the Arab Spring, Anonymous provided support to the. For the first time, Anonymous had gotten on the winning side of a real fight, and it liked the feeling.the feeliDuring the Arab Spring, Anonymous provided support to the . For the first time, Anonymous had**
+                </p>
+            </div>
+        </div>
+        <div class="row anonPage5 page storyPage">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-6 padding16 paddingSmLeft">
+                <h2 class="medHeaderText longTextBlock">Over it's 20-year life span, Anonymous has grown from a simple 4chan community to a global movement that has defined hacktivism</h2>
+                <p class="bodyText bodyTextPadding anon05_bodyText">This incredible evolution could not have occured without the power and freedom provided by the darknet. The privacy ensured sheilds the anons, allowing them to plan their attacks and employ illegal tactics to inflict actual damage on those who abuse their power *too unobjective?. Without this anonymity, the powerful targets of the attacks would surely punish the perpetrators. For many anons this would mean jail time, while for others it could even mean death. The darknet allows people to use the web however they choose, without fear of who’s watching; without this anonymity, their is no Anonymous.
+                </p>
+                <p class="endStoryBut bodyTextPadding anon_endStoryBut" onClick="returnToNav()">END STORY</p>
+            </div>
+            <div class='col-sm-5'></div>
+        </div>
+
+        <div class="row WL_Page1 page storyPage">
+            <div class="col-sm-5">
+                <!--                <img class="assangeImg img" src="IMG/WIKILEAKS/WL_assange.png">-->
+            </div>
+            <div class="col-sm-6 padding24 paddingMdLeft">
+                <p class="dateText">2006</p>
+                <h2 class="medHeaderText WL01_headerText">JULIAN ASSANGE FOUNDS WIKI LEAKS</h2>
+                <p class="bodyText WL01_bodyText">A non-profit website with the purposes of disseminating original documents from anonymous sources and leakers. The site leveraged the Tor network, creating a secure location for whistleblowers to safety expose the encroachment and corruption of state and corporate power.
+                </p>
+            </div>
+        </div>
+        <div class="row WL_Page15 quotePage page storyPage">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-6 padding21 paddingSmLeft">
+                <h2 class="quoteHeader WL_quoteText">One of the best ways to achieve justice is to expose injustice.</h2>
+                <p class="quoteSignature anon03_quoteSignature"><span class="redDash">–</span> JULIAN ASSANGE
+                </p>
+            </div>
+            <div class='col-sm-5'></div>
+        </div>
+        <div class="row WL_Page2 page storyPage">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-6 padding22 paddingSmLeft">
+                <p class="dateText">2010</p>
+                <h2 class="medHeaderText">WIKILEAKS MAKES MAJOR HEADLINES</h2>
+                <p class="bodyText WL02_bodyText">After leaking confidential documents from Iceland's Kaupthing Bank, WikiLeaks got major media coverage for the first time. The documents leaked showed that suspiciously large sums of money were loaned to various owners of the bank, and large debts were written off shortly before the collapse of Iceland's banking sector. WikiLeaks recieved praise by the Iceland people for uncovering this truth.*
+                </p><br>
+            </div>
+            <div class="col-sm-4 padding25 paddingMdLeft">
+                <p class="captionText WL02_caption">Anonymous released this video shortly after the attacks. Anonymous almost always releases videos that explain what their motives and who their targets are.</p>
+                <video class="video WL_iceland" mute loop>
+                    <source src="VIDEO/WL_iceland.mp4" type='video/mp4; codecs="avc1.42E01E"' />
+                </video>
+            </div>
+        </div>
+        <div class="row WL_Page3 page storyPage">
+            <div class="col-sm-6">
+                <div class="transcriptWrap">
+                    <img id="collatBut" class="button" onclick="toggleTranscript()" src="IMG/UI/textBut.png" height="42" width="42">
+                    <div class="textColWrap">
+                        <p class="transcriptText">06:44&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Crazyhorse this is Bushmaster Five, Bushmaster Four break.<br>
+                            06:54&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is Two-Six roger. I'll pop flares [drop flares]. We also have one individual moving. <br>
+                            07:07&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yeah Bushmaster, we have a van that's approaching and picking up the bodies.<br>
+                            07:14&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Where's that van at?<br>
+                            07:15&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Right down there by the bodies.<br>
+                            07:16&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Okay, yeah.<br>
+                            07:18&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bushmaster; Crazyhorse. We have individuals going to the scene, looks like possibly uh &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;picking up bodies and weapons.<br>
+                            07:25&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Let me engage.<br>
+                            07:28&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Can I shoot?<br>
+                            07:31&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Roger. Break. Uh Crazyhorse One-Eight request permission to uh engage.<br>
+                            07:36&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Picking up the wounded?<br>
+                            07:38&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yeah, we're trying to get permission to engage.<br>
+                            07:41&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Come on, let us shoot!<br>
+                            07:44&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bushmaster; Crazyhorse One-Eight.<br>
+                            07:49&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;They're taking him.<br>
+                            07:51&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Bushmaster; Crazyhorse One-Eight.<br>
+                            07:56&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is Bushmaster Seven, go ahead.<br>
+                            07:59&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Roger. We have a black SUV-uh Bongo truck [van] picking up the bodies. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Request permission to engage.<br>
+                            08:02&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Fuck.<br>
+                            08:06&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This is Bushmaster Seven, roger. This is Bushmaster Seven, roger. Engage.<br>
+                            08:12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One-Eight, engage.<br>
+                            08:12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear.<br>
+                            08:13&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Come on!<br>
+                            08:17&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear.<br>
+                            08:20&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clear.<br>
+                            08:21&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We're engaging.<br> </p>
+                        <p class="buttonLabel WL03_buttonLabel">TRANSCRIPT EXCERPT</p>
+                        <p class="captionText WL_collatCap">Unbeknownst to the US forces, the van described in this excerpt of the transcript and photographed above contained a father and two of his children. The father was killed and the two children both seriously injured.</p>
+                    </div>
+                </div>
+                <img class="collatImg img" src="IMG/WIKILEAKS/WL_Collat.jpg">
+            </div>
+            <div class="col-sm-6 padding20 paddingSmLeft">
+                <p class="dateText">2010</p>
+                <h2 class="biggishHeaderText thinHeaderCol">COLLATERAL MURDER</h2>
+                <p class="bodyText thinBodyCol">On April 5th WikiLeaks released a classified US military video depicting the indiscriminate slaying of over a dozen people in the Iraqi suburb of New Baghdad -- including two Reuters news staff. WikiLeaks released the full 39-minute video as wekk as a 17-minute version of the footage, edited down for maximum emotional impact. Following the video release, the attacks received worldwide coverage and controversy, with both the legality and morality of the attacks, as well as the manipulation of the footage by WikiLeaks coming into question.
+                </p>
+            </div>
+        </div>
+        <div class="row WL_Page4 page storyPage">
+            <video class="WL_Vid WL_01 video" hidden mute loop>
+                <source src="VIDEO/WL_01.mp4" type='video/mp4; codecs="avc1.42E01E"' />
+            </video>
+            <video class="WL_Vid WL_02 video" hidden mute loop>
+                <source src="VIDEO/WL_02.mp4" type='video/mp4; codecs="avc1.42E01E"' />
+            </video>
+            <video class="WL_Vid WL_03 video" hidden mute loop>
+                <source src="VIDEO/WL_03.mp4" type='video/mp4; codecs="avc1.42E01E"' />
+            </video>
+            <video class="WL_Vid WL_04 video" hidden mute loop>
+                <source src="VIDEO/WL_04.mp4" type='video/mp4; codecs="avc1.42E01E"' />
+            </video>
+            <video class="WL_Vid WL_05 video" hidden mute loop>
+                <source src="VIDEO/WL_05.mp4" type='video/mp4; codecs="avc1.42E01E"' />
+            </video>
+            <video class="WL_Vid WL_06 video" hidden mute loop>
+                <source src="VIDEO/WL_06.mp4" type='video/mp4; codecs="avc1.42E01E"' />
+            </video>
+            <div class="col-sm-2"></div>
+            <div class="col-sm-6 padding16">
+                <p class="dateText">2010</p>
+                <h2 class="smBigHeaderText WL04_headerText">WIKILEAKS RELEASES THE LARGEST LEAK
+                    OF CLASSIFIED DOCUMENTS IN HISTORY</h2>
+                <p class="bodyText WL04_bodyText">
+                    92,000 documents related to the war in Afghanistan and 400,000 documents related to the war Iraq War. The documents revealed a real and uncensored story of both wars. Detailing thousands of unreported civilian causalities, evidence of torture as well as other war crimes. The U.S. condemned these leaks, and suggesting the disclosures put lives at risk and gives adversaries valuable information.
+                </p>
+                <img class="button WL04_playBut" onclick="revealWLVideos()" src="IMG/UI/playBut.png">
+                <p class="buttonLabel WL04_buttonLabel">REACTIONS FROM U.S.A.</p>
+            </div>
+            <div class="col-sm-4 padding21 paddingMdLeft"></div>
+        </div>
+        <div class="row WL_Page5 page storyPage">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-5 padding15 paddingSmLeft">
+                <h2 class="quoteHeader WL05_quote">It is impossible to correct abuses unless we know that they’re going on.</h2>
+                <!--                <h2 class="quoteHeader WL05_quote">IT IS IMPOSSIBLE TO CORRECT ABUSES UNLESS WE KNOW THEY'RE GOING ON.</h2>-->
+                <div class="inlineContainer">
+                    <p class="quoteSignatureText"><span class="redDash">–</span>JULIAN ASSANGE</p>
+                    <div class="rightContainer">
+                        <p class="bodyText WL05_bodyText">Despite all these controversies, WikiLeaks created the technology that allows for whistleblowers to safely expose the corruption of state and corporate power, and for that they must be commeded. *(Their system of utilizing Tor to allow for anonymous communication between them and the whistleblower) This system has since been modeled and put into use by The New York Times, The Guardian* as well as other major media outlets.
+                        </p>
+                        <p class="endStoryBut WL_endBut" onClick="returnToNav()">END STORY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6"></div>
+        </div>
+
+        <div class="row SR_Page1 page storyPage">
+            <div class="col-sm-5">
+                <!--                <img class="rossImg" src="IMG/WIKILEAKS/SR_ross.png">-->
+            </div>
+            <div class="col-sm-6 padding17 paddingMdLeft">
+                <p class="dateText">2010</p>
+                <h2 class="smHeaderText SR01_headerText">ROSS ULBRICT BEGINS DEVELOPEMENT ON SILK ROAD </h2>
+                <p class="bodyText">At the age of 26, Ulbrict - a libretarian idealist from Texas - began buidling the website Silk Road. He envisioned the site as a free market experiment with an emphasis on user anonymity. To achieve this, Ulbrict planned to host the site on the darknet, making communition between users entirely anonymous. Ulbrict designed the site to only handle transactions made in bitcoin, offering a level of anonymity far greater than any other form of currency or credit card. As a result, Silk Road’s existence would be completely outside the scope of government control, allowing users to buy or sell almost anything.
+                </p>
+            </div>
+        </div>
+        <div class="row SR_Page2 page storyPage">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-6 padding21 paddingSmLeft">
+                <p class="dateText">2010</p>
+                <h2 class="medHeaderText">SILK ROAD BECOMES THE BIGGEST DARK WEB BLACK MARKET</h2>
+                <div class="bodyTextWrap">
+                    <p class="bodyText SR02_bodyText">Much of this success can be attributed to Silk Road’s trustworthiness. By establishing a rating and feedback system, Silk Road eliminated much of the fear of buying fake or altered products. Additionally, since purchases were occurring on an online platform, Silk Road eliminated the dangers of meeting with nefarious dealers in person. Ross even created a commercial for the site. In essence, Silk Road brought the drug trade into the 21st century.
+                    </p>
+                    <!--                    <img id="SR02_playBut" class="button playBut" src="IMG/UI/playBut.png" height="38" width="38">-->
+                </div>
+            </div>
+            <div class="col-sm-4 padding21 paddingMdLeft">
+                <video class="SR_Vid SR_ad video" mute loop>
+                    <source src="VIDEO/SR_ad.mp4" type='video/mp4; codecs="avc1.42E01E"' />
+                </video>
+            </div>
+        </div>
+        <div class="row SR_Page25 quotePage page storyPage">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-6 padding22 paddingSmLeft">
+                <h2 class="quoteHeader SR_quoteText">People should have the right to buy and sell whatever they wanted so long as they aren't hurting anyone</h2>
+                <p class="quoteSignature anon03_quoteSignature"><span class="redDash">–</span> ROSS ULBRICT
+                </p>
+            </div>
+            <div class='col-sm-5'></div>
+        </div>
+        <div class="row SR_Page3 page storyPage">
+            <div class="col-sm-5">
+                <!--                <img class="rossImg" src="IMG/WIKILEAKS/SR_ross.png">-->
+            </div>
+            <div class="col-sm-6 padding24 paddingBigLeft">
+                <p class="dateText SR03_dateText">2010</p>
+                <!--                <h2 class="smHeaderText">ROSS ULBRICT BEGINS DEVELOPING SILK ROAD </h2>-->
+                <p class="bodyText">Despite creating terms of service that were more prohibitive than other dark web markets, Ulbricht became unwilling or unable to maintain the standards that he had initially set, and as the site evolved, more and more dangerous products, including heroin, guns, and fentanyl, began to be listed. All these listings were easily accessbile to everyone of all ages, all you needed was a shipping address and a bitcoin account.
+                </p>
+            </div>
+        </div>
+        <div class="row SR_Page4 page storyPage">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-6 padding23 paddingSmLeft">
+                <p class="dateText">2013</p>
+                <h2 class="medHeaderText SR04_headerText">AFTER ALMOST A TWO-YEAR LONG INVESTIGATION THE FBI SHUTS DOWN SILK ROAD</h2>
+                <div class="bodyTextWrap">
+                    <p class="bodyText">Ulbricht was arrested and sentenced to life in prison(more info here conviceted crimes etc)*. As part of their investigation, they determined that over $1.2 billion in sales had occurred involving 150,000 customers and 4000 vendors.
+                    </p>
+                </div>
+            </div>
+            <div class="col-sm-4 padding21 paddingMdLeft"></div>
+        </div>
+        <div class="row SR_Page5 page storyPage">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-6 padding17 paddingSmLeft">
+                <p class="dateText">TODAY</p>
+                <h2 class="medBigHeaderText SR04_headerText">THE END OF ONLINE BLACK MARKETS?</h2>
+                <div class="bodyTextWrap SR05_container">
+                    <div class="SR05_buttonGroup">
+                        <div class="viewButContainer buttonContainer">
+                            <div class="buttonTextWrap">
+                                <p class="buttonLabel rightButtonLabel rightAlign">DREAM MARKET</p>
+                                <p id="viewBut1Cap" class="captionText SR05_caption rightAlign">
+                                    Status: Active since 2013<br>
+                                    Total Current Listings: 120,062<br>
+                                    Drug Listings: 61,457
+                                </p>
+                            </div>
+                            <img id="SR_viewBut1" class="button viewBut" onclick="revealSR_05(this)" src="IMG/UI/viewBut.png">
+                        </div>
+                        <div class="viewButContainer buttonContainer">
+                            <div class="buttonTextWrap">
+                                <p class="buttonLabel rightButtonLabel rightAlign">SILK ROAD 3</p>
+                                <p id="viewBut2Cap" class="captionText SR05_caption rightAlign">
+                                    Status: Active since 2013<br>
+                                    Total Current Listings: 51,074<br>
+                                    Drug Listings: 33,291
+                                </p>
+                            </div>
+                            <img id="SR_viewBut2" class="button viewBut" onclick="revealSR_05(this)" src="IMG/UI/viewBut.png">
+                        </div>
+                        <div class="viewButContainer buttonContainer SR_viewBut3Container">
+                            <div class="buttonTextWrap">
+                                <p class="buttonLabel rightButtonLabel rightAlign">ALPHA BAY</p>
+                                <p id="viewBut3Cap" class="captionText SR05_caption rightAlign">
+                                    Status: Shutdown<br>
+                                    Listings before shutdown:<br>
+                                    Total Listings: 369,000<br>
+                                    Drug Listings: 250,000<br>
+                                </p>
+                            </div>
+                            <img id="SR_viewBut3" class="button viewBut" onclick="revealSR_05(this)" src="IMG/UI/viewBut.png">
+                        </div>
+                    </div>
+                    <div class="textAndButContainer">
+                        <p class="bodyText SR05_bodyText">Rather than end the online black market trade, the shutdown of Silk Road simply caused other darknet black market sites to spring up to take over the demand left behind. Today there are many black markets still on the darknet, many of which are much larger than the Silk Road, making one thing very clear: as long as users can remain anonymous and money can be made, a black market will always exist on the darknet.
+                        </p>
+                        <p class="endStoryBut SR_endBut" onClick="returnToNav()">END STORY</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 padding21 paddingBigLeft"></div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+<script src="js/lottie.js"></script>
+<script src="//cdn.jsdelivr.net/npm/velocity-animate@1.5/velocity.min.js"></script>
+<script>
+    
+    var allVids = $(document).find(".video");
+    function myFunction(x) {
+        if (x.matches) { // If media query matches
+            $(".sideNav").prop('hidden', true);
+            for (var i = 0; i < allVids.length; i++) {
+                $(allVids[i]).prop('hidden', true); //mute
+            }
+        } else {
+            $(".sideNav").prop('hidden', false);
+            for (var i = 0; i < allVids.length; i++) {
+                if($(allVids[i]).hasClass("WL_Vid")){
+                    console.log("dont hide this");
+                }
+                else{
+                    $(allVids[i]).prop('hidden', false); //mute
+                }
+            }
+        }
+    }
+
+    var x = window.matchMedia("(max-width: 480px)")
+    myFunction(x) // Call listener function at run time
+    x.addListener(myFunction) // Attach listener function on state changes
+
+    var navClicked = false;
+    var pageNumber = -1;
+    var pageClassList;
+    var storyName = "";
+
+    //keep track of what pages in story have been visited
+    var visitedPages = [];
+    var numPages = 6;
+    while (numPages--) visitedPages.push(false);
+
+    function resetVistedPagesArray() {
+        while (numPages--) visitedPages.push(false);
+    }
+
+    function startStory(storyName) {
+//        $(".uiTitle").prop("hidden", false);
+        setTimeout(function(){
+             $('.uiTitle').addClass("opacity1");
+        }, 1000);
+    
+        var story = $(storyName).attr('class');
+        if (story == "anonNavMenu") {
+            $(".bgImage").removeAttr("hidden");
+            $('.nav1').addClass("fadeOut");
+            $('.nav2').addClass("fadeOut");
+            pageClassList = ['.anonPage1', '.anonPage2', '.anonPage3', '.anonPage35', '.anonPage4', '.anonPage5'];
+            storyName = "anon";
+        } else if (story == "wikiLeaksNavMenu") {
+            $('.nav1').addClass("fadeOut");
+            $('.nav3').addClass("fadeOut");
+            pageClassList = ['.WL_Page1', '.WL_Page15', '.WL_Page2', '.WL_Page3', '.WL_Page4', '.WL_Page5'];
+            storyName = "wl";
+        } else {
+            $('.nav2').addClass("fadeOut");
+            $('.nav3').addClass("fadeOut");
+            pageClassList = ['.SR_Page1', '.SR_Page2', '.SR_Page25', '.SR_Page3', '.SR_Page4', '.SR_Page5'];
+            storyName = "sr";
+        }
+
+        navClicked = true;
+        pageNumber = 0;
+        setTimeout(function() {
+            $(".navMenuRow").css("top", "-100%");
+            $(pageClassList[pageNumber]).css("top", "0%");
+        }, 500);
+        //change slideBarText
+        slideSideBar();
+    }
+
+    function slideSideBar() {
+        setTimeout(function() {
+            $(".sideNav").css("left", "100%");
+        }, 1500);
+    }
+
+    var currentlyScrolling = false;
+    //prev page in story
+    function pageUp() {
+        if (navClicked == true && pageNumber != 0 && currentlyScrolling == false) {
+            currentlyScrolling = true;
+            setTimeout(function() {
+                currentlyScrolling = false;
+            }, 2000);
+            $(pageClassList[pageNumber]).css("top", "100%");
+            $(pageClassList[pageNumber - 1]).css("top", "0%");
+            pageNumber--;
+        }
+        //revealVid($(pageClassList[pageNumber]).attr("id"));
+    }
+    //next page in story
+    function pageDown() {
+        if (navClicked == true && pageNumber != 5 && currentlyScrolling == false) {
+            currentlyScrolling = true;
+            setTimeout(function() {
+                currentlyScrolling = false;
+            }, 1200);
+
+            $(pageClassList[pageNumber]).css("top", "-100%");
+            $(pageClassList[pageNumber + 1]).css("top", "0%");
+            pageNumber++;
+
+            //if page hasnt been visited yet
+            if (visitedPages[pageNumber] == false) {
+                visitedPages[pageNumber] = true;
+                console.log(pageClassList[pageNumber]);
+                //quote scramble
+                if (pageClassList[pageNumber] == ".SR_Page25") {
+                    console.log('boo');
+                    fSR_quote.setText(phrases5[counter]);
+                    counter = (counter + 1) % phrases5.length
+                } else if (pageClassList[pageNumber] == ".anonPage35") {
+                    fAnon_quote.setText(phrases7[counter]);
+                    counter = (counter + 1) % phrases7.length
+                } else if (pageClassList[pageNumber] == ".WL_Page15") {
+                    fWL_quote.setText(phrases6[counter]);
+                    counter = (counter + 1) % phrases6.length
+                }
+
+                var pageVids = $(pageClassList[pageNumber]).find('.video');
+                for (var i = 0; i < pageVids.length; i++) {
+                    pageVids[i].play();
+                }
+            }
+        }
+        revealVid($(pageClassList[pageNumber]).attr("id"));
+    }
+
+    var WL_vids = [".WL_04", ".WL_01", ".WL_02", ".WL_05", ".WL_06", ".WL_03"];
+    var vidRevealInterval = 0;
+    var vidsRevealed = false;
+
+    function revealWLVideos() {
+        if (vidsRevealed == false) {
+            $(WL_vids[0]).attr("hidden", false);
+            $(WL_vids[0]).addClass('VideoFadeInAndScale');
+            setTimeout(function() {
+                $(WL_vids[1]).attr("hidden", false);
+                $(WL_vids[1]).addClass('VideoFadeInAndScale');
+            }, 500);
+            setTimeout(function() {
+                $(WL_vids[2]).attr("hidden", false);
+                $(WL_vids[2]).addClass('VideoFadeInAndScale');
+            }, 1000);
+            setTimeout(function() {
+                $(WL_vids[3]).attr("hidden", false);
+                $(WL_vids[3]).addClass('VideoFadeInAndScale');
+            }, 1500);
+            setTimeout(function() {
+                $(WL_vids[4]).attr("hidden", false);
+                $(WL_vids[4]).addClass('VideoFadeInAndScale');
+            }, 2000);
+            setTimeout(function() {
+                $(WL_vids[5]).attr("hidden", false);
+                $(WL_vids[5]).addClass('VideoFadeInAndScale');
+            }, 2500);
+            vidsRevealed = true;
+        }
+    }
+
+    //scrolling event listener
+    var midScroll = false;
+    document.addEventListener("wheel", function(e) {
+        if (onIntroPage2 == true) {
+            onIntroPage2 = false;
+            var introPage2 = $('.introPage2');
+            $(introPage2).removeClass('fadeInAndScale');
+            fadeOutAndReset(introPage2);
+            setTimeout(function() {
+                $('.navMenuRow').prop('hidden', false);
+                $('.navPage').addClass("fadeInAndScale");
+                next();
+            }, 900);
+        } else {
+            if (pageNumber != -1) {
+                var variation = parseInt(e.deltaY);
+                //scroll down - next page in story
+                if (variation > 0) {
+                    if (midScroll == false) {
+                        pageDown();
+                        console.log('scroll down');
+                        midScroll = true;
+                        //2s limitation bw each scroll
+                        setTimeout(function() {
+                            midScroll = false;
+                        }, 1200);
+                    }
+                }
+                //scroll up - prev page in story
+                else if (pageNumber != 5) {
+                    if (midScroll == false) {
+                        pageUp();
+                        console.log('scroll up');
+                        midScroll = true;
+                        //2s limitation bw each scroll
+                        setTimeout(function() {
+                            midScroll = false;
+                        }, 2000);
+                    }
+                }
+            }
+        }
+    });
+
+    $(".video").hover(
+        function() {
+            $(this).animate({
+                volume: .9
+            }, 700);
+            $(this).prop('muted', false); //mute
+        },
+        function() {
+            $(this).animate({
+                volume: 0
+            }, 700);
+            //        $( this ).prop('muted', true); //unmute
+        }
+    );
+    //    ****
+    //    var WL_Vids = $(".WL_Page4").find(".WL_Vid");
+    //    for(var i = 0; i < WL_Vids.length; i++){
+    //        $(WL_Vids[i]).get(0).play();
+    //    }
+
+    //    mute all videos for sanitys sake
+    for (var i = 0; i < allVids.length; i++) {
+        $(allVids[i]).prop('muted', true); //mute
+    }
+
+    function returnToNav() {
+        pageNumber = -1;
+        location.reload();
+    }
+
+    //    var animation = bodymovin.loadAnimation({
+    //        container: document.getElementById('navMenuAnim'),
+    //        renderer: 'svg',
+    //        loop: false,
+    //        autoplay: true,
+    //        path: 'JS/data.json'
+    //    });
+
+    // ——————————————————————————————————————————————————
+    // Video Code
+    // ——————————————————————————————————————————————————
+
+    $(".playBut").click(function() {
+        if ($(this).hasClass('playBut')) {
+            revealVid($(this).attr("id"));
+        } else if ($(this).hasClass('textBut')) {
+
+        } else if ($(this).hasClass('otherBut')) {
+
+        }
+    });
+
+    var timePassed = true;
+    var transcriptVisible = false;
+
+    function toggleTranscript() {
+        if (transcriptVisible == true && timePassed == true) {
+            console.log('hide');
+            hideTranscript();
+            timePassed = false;
+        } else {
+            console.log('show');
+            revealTranscript();
+            timePassed = false;
+        }
+    }
+
+    function revealTranscript() {
+        $(".transcriptText").css("opacity", "1");
+        setTimeout(function() {
+            $(".WL_collatCap").css("opacity", "1");
+            transcriptVisible = true;
+            timePassed = true;
+        }, 1000);
+    }
+
+    function hideTranscript() {
+        $(".transcriptText").css("opacity", "0");
+        $(".WL_collatCap").css("opacity", "0");
+        transcriptVisible = false;
+        timePassed = true;
+    }
+
+    function revealVid(id) {
+        calcTransparency();
+        appear();
+    }
+
+    //change this variables to your liking (they are time in milliseconds)
+    var HIDDEN_TIME = 10000;
+    var FADE_TIME = 600;
+
+    function appear() {
+        $('#appearing_div').fadeIn("slow");
+        var video = $("#video").get(0);
+        var videoDuration = video.duration;
+        //        console.log(video);
+        video.play();
+        //video.muted = true;
+        //        setTimeout(disappear, videoDuration * 1000 - FADE_TIME);
+    };
+
+    function disappear() {
+        $('#appearing_div').fadeOut(FADE_TIME);
+        setTimeout(appear, HIDDEN_TIME);
+    };
+
+    //transparency function from http://www.sciencelifeny.com/transparency/transparency.html
+    function calcTransparency() {
+        var outputCanvas = document.getElementById('output'),
+            output = outputCanvas.getContext('2d'),
+            bufferCanvas = document.getElementById('buffer'),
+            buffer = bufferCanvas.getContext('2d'),
+            video = document.getElementById('video'),
+            width = outputCanvas.width,
+            height = outputCanvas.height,
+            interval;
+
+        function processFrame() {
+            video.crossOrigin = "Anonymous";
+            buffer.drawImage(video, 0, 0);
+            //            // fill vertically  
+            //            var vRatio = (height / video.videoHeight) * video.videoWidth;
+            //            buffer.drawImage(video, 0, 0, vRatio, height);
+            //
+            //            // fill horizontally  
+            //            var hRatio = (width / video.videoWidth) * video.videoHeight;
+            //            buffer.drawImage(video, 0, 0, width, hRatio);
+
+            buffer.crossOrigin = "Anonymous";
+
+            // this can be done without alphaData, except in Firefox which doesn't like it when image is bigger than the canvas
+            var image = buffer.getImageData(0, 0, width, height),
+                imageData = image.data,
+                alphaData = buffer.getImageData(0, height, width, height).data;
+
+            for (var i = 3, len = imageData.length; i < len; i = i + 4) {
+                imageData[i] = alphaData[i - 1];
+            }
+
+            output.putImageData(image, 0, 0, 0, 0, width, height);
+        }
+
+        video.addEventListener('pause', function() {
+            clearInterval(interval);
+        }, false);
+
+        video.addEventListener('play', function() {
+            clearInterval(interval);
+            interval = setInterval(processFrame, 40)
+        }, false);
+
+    }
+
+
+    var SR05_viewBut1Clicked = false;
+    var SR05_viewBut2Clicked = false;
+    var SR05_viewBut3Clicked = false;
+    var SR05_captions = document.getElementsByClassName('SR05_caption');
+
+    function revealSR_05(viewBut) {
+        var captionElementID;
+        var clickedSiteID = viewBut.id;
+        if (clickedSiteID == "SR_viewBut1" && SR05_viewBut1Clicked == false) {
+            SR05_viewBut1Clicked = true;
+            captionElementID = SR05_captions[0].id;
+        }
+        if (clickedSiteID == "SR_viewBut2" && SR05_viewBut2Clicked == false) {
+            SR05_viewBut2Clicked = true;
+            captionElementID = SR05_captions[1].id;
+        }
+        if (clickedSiteID == "SR_viewBut3" && SR05_viewBut3Clicked == false) {
+            SR05_viewBut3Clicked = true;
+            captionElementID = SR05_captions[2].id;
+        }
+
+        console.log(captionElementID);
+        $("#" + captionElementID).css("opacity", "1");
+    }
+
+    // ——————————————————————————————————————————————————
+    // Text Scramble
+    // ——————————————————————————————————————————————————
+
+    //questions to figure out:
+    //how to stop looping - SetTimeout
+    class TextScramble {
+        //text scramble object has class of element to scramble innerHTML of, chars to scramble with and update method(?)
+        constructor(el) {
+            this.el = el
+            this.chars = '!<>-_\\/[]{}—=+*^?#ABQCEURI18492047'
+            this.update = this.update.bind(this)
+        }
+        setText(newText) {
+            //            const oldText = this.el.childNodes[0].innerText;
+
+            //take innerHTML of class passed into constructor
+            const oldText = this.el.innerText;
+            //max of og innerHTML and newScrambledText
+            const length = Math.max(oldText.length, newText.length)
+            //???
+            const promise = new Promise((resolve) => this.resolve = resolve)
+            this.queue = []
+
+            for (let i = 0; i < length; i++) {
+                const from = oldText[i] || ''
+                const to = newText[i] || ''
+                const start = Math.floor(Math.random() * 0);
+                var end;
+                if (newText == "UNINDEXED") {
+                    console.log('hi');
+                    //by altering this changes length of scramble
+                    //                    end = start + Math.floor(Math.random() * 100);
+                    //should manually set unindexed reveal times
+                    if (i == 5) {
+                        end = 190;
+                    } else {
+                        end = Math.floor(Math.random() * ((175 - 50) + 1) + 50);
+                    }
+                    console.log(end);
+                } else {
+                    end = Math.floor(Math.random() * ((155 - 30) + 1) + 30);
+                }
+                this.queue.push({
+                    from,
+                    to,
+                    start,
+                    end
+                })
+            }
+            cancelAnimationFrame(this.frameRequest)
+            this.frame = 0
+            this.update();
+            return promise
+        }
+        update() {
+            let output = ''
+            let complete = 0
+            for (let i = 0, n = this.queue.length; i < n; i++) {
+                let {
+                    from,
+                    to,
+                    start,
+                    end,
+                    char
+                } = this.queue[i]
+                if (this.frame >= end) {
+                    complete++
+                    output += to
+                } else if (this.frame >= start) {
+                    //changes speed of scramble
+                    if (!char || Math.random() < 0.1) {
+                        char = this.randomChar()
+                        this.queue[i].char = char
+                    }
+                    output += `<span class="dud">${char}</span>`
+                } else {
+                    output += from
+                }
+            }
+            this.el.innerHTML = output
+            //            this.el.childNodes[0].innerHTML = output;
+            if (complete === this.queue.length) {
+                this.resolve()
+            } else {
+                this.frameRequest = requestAnimationFrame(this.update)
+                this.frame++
+            }
+        }
+        randomChar() {
+            return this.chars[Math.floor(Math.random() * this.chars.length)]
+        }
+    }
+
+    // 
+    // Example
+    // 
+
+    const phrases1 = [
+        'SILK ROAD'
+    ]
+    const phrases2 = [
+        'WIKILEAKS'
+    ]
+    const phrases3 = [
+        'ANONYMOUS'
+    ]
+    const phrases4 = [
+        'UNINDEXED'
+    ]
+    const phrases5 = [
+        "People should have the right to buy and sell whatever they wanted so long as they aren't hurting anyone"
+    ]
+    const phrases6 = [
+        "One of the best ways to achieve justice is to expose injustice."
+    ]
+    const phrases7 = [
+        "We are anonymous, we are legion, we do not forgive, we do not forget"
+    ]
+
+    const title = document.querySelector('.titleText');
+    const SR_quote = document.querySelector('.SR_quoteText');
+    const WL_quote = document.querySelector('.WL_quoteText');
+    const anon_quote = document.querySelector('.anon_quoteText');
+    const silkRoad = document.querySelector('.navText1');
+    const wikiLeaks = document.querySelector('.navText2');
+    const anon = document.querySelector('.navText3');
+
+    const fSilkRoad = new TextScramble(silkRoad);
+    const fWikiLeaks = new TextScramble(wikiLeaks);
+    const fAnon = new TextScramble(anon);
+    const fSR_quote = new TextScramble(SR_quote);
+    const fWL_quote = new TextScramble(WL_quote);
+    const fAnon_quote = new TextScramble(anon_quote);
+    const fTitle = new TextScramble(title);
+
+    let counter = 0
+    const next = () => {
+        //PHRASE1
+        //sets time in between iterations of scramble
+        fSilkRoad.setText(phrases1[counter]);
+        //for multiple phrases
+        counter = (counter + 1) % phrases1.length
+        //PHRASE2
+        fWikiLeaks.setText(phrases2[counter]);
+        counter = (counter + 1) % phrases2.length
+        //PHRASE3
+        fAnon.setText(phrases3[counter]);
+        counter = (counter + 1) % phrases3.length
+
+    }
+
+
+    // ——————————————————————————————————————————————————
+    // Intro/Transition Animation
+    // ——————————————————————————————————————————————————
+
+    var onIntroPage2 = false;
+    var introPage = $(".introPage");
+
+    function fadeOutAndReset(currentPage) {
+        var pageElements = $(currentPage).children();
+        for (var i = 0; i < pageElements.length; i++) {
+            //            $(pageElements[i]).addClass("fadeOut");
+        }
+        $(currentPage).addClass("fadeOutAndScale");
+        setTimeout(function() {
+            $(currentPage).prop('hidden', true);
+        }, 1000);
+    }
+
+    function introAnim() {
+        $(".redBar").css('width', '110%');
+        fTitle.setText(phrases4[counter]);
+        counter = (counter + 1) % phrases4.length
+
+        //fadeOut/scaleDown titlePage and hide
+        setTimeout(function() {
+            fadeOutAndReset(introPage);
+        }, 4000);
+
+        //unhide and fadeIn/scaleDown
+        setTimeout(function() {
+            $('.introPage2').addClass("fadeInAndScale");
+            setTimeout(function() {
+                onIntroPage2 = true;
+            }, 500);
+        }, 4500);
+    }
+    introAnim();
+
+
+    // ——————————————————————————————————————————————————
+    // BG Generation / Movement
+    // ——————————————————————————————————————————————————
+
+    var navHovering = false;
+    $('.navMenu').mouseenter(navMouseEnter).mouseleave(navMouseLeave);
+
+    function navMouseEnter() {
+        navHovering = true;
+        var navNum = this.classList[2];
+        var navNumNode;
+        if (navNum == 'nav1') {
+            navNumNode = document.querySelector(".navNum1");
+            $(".nav1").addClass("navHover");
+            $(".nav2").addClass("navNotHovered");
+            $(".nav3").addClass("navNotHovered");
+            //            clearWrongBG();
+        }
+        if (navNum == 'nav2') {
+            navNumNode = document.querySelector(".navNum2");
+            $(".nav2").addClass("navHover");
+            $(".nav1").addClass("navNotHovered");
+            $(".nav3").addClass("navNotHovered");
+        }
+        if (navNum == 'nav3') {
+            navNumNode = document.querySelector(".navNum3");
+            $(".nav3").addClass("navHover");
+            $(".nav2").addClass("navNotHovered");
+            $(".nav1").addClass("navNotHovered");
+        }
+        generateBackground(navNum);
+    }
+
+    function navMouseLeave() {
+        navHovering = false;
+        var navNum = this.classList[2];
+        var navNumNode;
+        if (navNum == 'nav1') {
+            navNumNode = document.querySelector(".navNum1");
+            $(".nav1").removeClass("navHover");
+            $(".nav2").removeClass("navNotHovered");
+            $(".nav3").removeClass("navNotHovered");
+        }
+        if (navNum == 'nav2') {
+            navNumNode = document.querySelector(".navNum2");
+            $(".nav2").removeClass("navHover");
+            $(".nav1").removeClass("navNotHovered");
+            $(".nav3").removeClass("navNotHovered");
+
+        }
+        if (navNum == 'nav3') {
+            navNumNode = document.querySelector(".navNum3");
+            $(".nav3").removeClass("navHover");
+            $(".nav2").removeClass("navNotHovered");
+            $(".nav1").removeClass("navNotHovered");
+        }
+        clearBackground();
+    }
+
+    var bgGenerated = false;
+
+    var wikiLeaksImgs = ['IMG/WIKILEAKS/1.png', 'IMG/WIKILEAKS/2.png', 'IMG/WIKILEAKS/3.png', 'IMG/WIKILEAKS/4.png', 'IMG/WIKILEAKS/5.png', 'IMG/WIKILEAKS/6.png', 'IMG/WIKILEAKS/7.png', 'IMG/WIKILEAKS/8.png', 'IMG/WIKILEAKS/9.png', 'IMG/WIKILEAKS/10.png', 'IMG/WIKILEAKS/11.png'];
+
+    //silkRoad imgs [2][8] is last one
+    var silkRoadImgs = [
+        ['IMG/SILKROAD/GOOD/SR_GOOD1.png', 'IMG/SILKROAD/GOOD/SR_GOOD2.png', 'IMG/SILKROAD/GOOD/SR_GOOD3.png', 'IMG/SILKROAD/GOOD/SR_GOOD4.png', 'IMG/SILKROAD/GOOD/SR_GOOD5.png', 'IMG/SILKROAD/GOOD/SR_GOOD6.png', 'IMG/SILKROAD/GOOD/SR_GOOD7.png', 'IMG/SILKROAD/GOOD/SR_GOOD8.png', 'IMG/SILKROAD/GOOD/SR_GOOD9.png'],
+
+        ['IMG/SILKROAD/BAD/SR_BAD1.png', 'IMG/SILKROAD/BAD/SR_BAD2.png', 'IMG/SILKROAD/BAD/SR_BAD3.png', 'IMG/SILKROAD/BAD/SR_BAD4.png', 'IMG/SILKROAD/BAD/SR_BAD5.png', 'IMG/SILKROAD/BAD/SR_BAD6.png', 'IMG/SILKROAD/BAD/SR_BAD7.png', 'IMG/SILKROAD/BAD/SR_BAD8.png', 'IMG/SILKROAD/BAD/SR_BAD9.png'],
+
+        ['IMG/SILKROAD/WORST/SR_WORST1.png', 'IMG/SILKROAD/WORST/SR_WORST2.png', 'IMG/SILKROAD/WORST/SR_WORST3.png', 'IMG/SILKROAD/WORST/SR_WORST4.png', 'IMG/SILKROAD/WORST/SR_WORST5.png', 'IMG/SILKROAD/WORST/SR_WORST6.png', 'IMG/SILKROAD/WORST/SR_WORST7.png', 'IMG/SILKROAD/WORST/SR_WORST8.png', 'IMG/SILKROAD/WORST/SR_WORST9.png']
+    ];
+
+    var imgNumLayer4 = 70;
+    var imgNumLayer3 = 45;
+    var imgNumLayer2 = 10;
+    var imgNumLayer1 = 4;
+
+    var anonCodeNumLayer1 = 8;
+    var anonCodeNumLayer2 = 16;
+    var anonCodeNumLayer3 = 25;
+    var anonCodeNumLayer4 = 60;
+    var codeBlockNumTotal = anonCodeNumLayer1 + anonCodeNumLayer2 + anonCodeNumLayer3 + anonCodeNumLayer4;
+
+    var bgLayer4Class;
+    var bgLayer3Class;
+    var bgLayer2Class;
+    var bgLayer1Class;
+
+    function generateBackground(storyNum) {
+        if (bgGenerated == false) {
+            if (storyNum == 'nav1') {
+                bgLayer4Class = 'SR_BGLayer4';
+                bgLayer3Class = 'SR_BGLayer3';
+                bgLayer2Class = 'SR_BGLayer2';
+                bgLayer1Class = 'SR_BGLayer1';
+            } else if (storyNum == 'nav2') {
+                bgLayer4Class = 'WL_bgLayer4';
+                bgLayer3Class = 'WL_bgLayer3';
+                bgLayer2Class = 'WL_bgLayer2';
+                bgLayer1Class = 'WL_bgLayer1';
+            } else if (storyNum == 'nav3') {
+                bgLayer4Class = 'anonCodeLayer4';
+                bgLayer3Class = 'anonCodeLayer3';
+                bgLayer2Class = 'anonCodeLayer2';
+                bgLayer1Class = 'anonCodeLayer1';
+                generateAnonBG(anonCodeNumLayer4, bgLayer4Class);
+                generateAnonBG(anonCodeNumLayer3, bgLayer3Class);
+                generateAnonBG(anonCodeNumLayer2, bgLayer2Class);
+                generateAnonBG(anonCodeNumLayer1, bgLayer1Class);
+            }
+            bgGenerated = true;
+            generateBGLayer(storyNum, bgLayer4Class, imgNumLayer4);
+            generateBGLayer(storyNum, bgLayer3Class, imgNumLayer3);
+            generateBGLayer(storyNum, bgLayer2Class, imgNumLayer2);
+            generateBGLayer(storyNum, bgLayer1Class, imgNumLayer1);
+        }
+    }
+
+    //create each bgImage depending on numbers supplied to parameters
+    function generateBGLayer(storyNum, bgLayerClass, imgNum) {
+        var bgCounter = 0;
+        var bgSetInterval = setInterval(function() {
+            if (bgCounter > imgNum || navHovering == false) {
+                clearInterval(bgSetInterval);
+                if (navHovering == false) {
+                    clearBackground();
+                }
+            }
+            var topPos = Math.floor((Math.random() * 100) + 1);
+            var leftPos = Math.floor((Math.random() * 100) + 1);
+            var img = document.createElement("img");
+
+            if (storyNum == 'nav1') {
+                var rando = Math.random();
+                var SR_ImgIndex = Math.floor((Math.random() * 9));
+                if (rando < .3333) {
+                    img.setAttribute('src', silkRoadImgs[0][SR_ImgIndex]);
+                } else if (rando < .6666) {
+                    img.setAttribute('src', silkRoadImgs[1][SR_ImgIndex]);
+                } else if (rando < .9999) {
+                    img.setAttribute('src', silkRoadImgs[2][SR_ImgIndex]);
+                }
+            } else if (storyNum == 'nav2') {
+                var WL_imgIndex = Math.floor((Math.random() * 10));
+                img.setAttribute('src', wikiLeaksImgs[WL_imgIndex]);
+            } else {
+
+            }
+            $(img).addClass(bgLayerClass);
+            $(img).addClass('bgLayer');
+            $(img).css({
+                "top": +topPos + "%",
+                "left": +leftPos + "%"
+            });
+
+            //hover on/off methods for each bgImg
+            $(img).hover(
+                function addHover(img) {
+                    $(this).addClass('bgLayerHover');
+                },
+
+                function removeHover(img) {
+                    $(this).removeClass('bgLayerHover');
+                }
+            );
+            $('.bgContainer').append(img);
+            if (storyNum == 'nav1' || storyNum == 'nav2') {}
+            moveBG();
+            bgCounter++;
+        }, 15);
+    }
+
+    //generates first iteration of AnonCodeBlocks
+    function generateAnonBG(codeBlockNum, bgLayerClass) {
+        var bgCounter = 0;
+        var bgSetInterval = setInterval(function() {
+            if (bgCounter > codeBlockNum || navHovering == false) {
+                clearInterval(bgSetInterval);
+                if (navHovering == false) {
+                    clearBackground();
+                }
+            }
+            var randomTopPos = Math.floor((Math.random() * 100) + 1);
+            var randomLeftPos = Math.floor((Math.random() * 100) + 1);
+            var codeBlockNodes = document.querySelector(".codeBlockContainer").children;
+            var rando;
+            if (bgLayerClass == 'anonCodeLayer1') {
+                //3-5 (Layer1)
+                rando = Math.floor((Math.random() * 3) + 3);
+            } else if (bgLayerClass == 'anonCodeLayer2') {
+                //2-5 (layer2)
+                rando = Math.floor((Math.random() * 4) + 2);
+            } else if (bgLayerClass == 'anonCodeLayer3') {
+                //1-5 (layer3)
+                rando = Math.floor((Math.random() * 5) + 1);
+            } else {
+                rando = Math.floor((Math.random() * 6));
+            }
+            var codeBlockClone = $(codeBlockNodes[rando]).clone();
+            $(codeBlockClone).addClass('.anonBGCode');
+            $(codeBlockClone).addClass(bgLayerClass);
+            $(codeBlockClone).addClass('.typewriter');
+            $(codeBlockClone).css({
+                "top": +randomTopPos + "%",
+                "left": +randomLeftPos + "%"
+            });
+            $('.bgContainer').append(codeBlockClone);
+            moveBG();
+            bgCounter++;
+        }, 15);
+    }
+
+    //moves all bgImgLayers at different speeds
+    function moveBG() {
+        //bgImg arrays
+        var bgLayer1 = document.getElementsByClassName(bgLayer1Class);
+        var bgLayer2 = document.getElementsByClassName(bgLayer2Class);
+        var bgLayer3 = document.getElementsByClassName(bgLayer3Class);
+        var bgLayer4 = document.getElementsByClassName(bgLayer4Class);
+
+        var layer1Velocity = .012;
+        var layer2Velocity = .007;
+        var layer3Velocity = .004;
+        var layer4Velocity = .001;
+        var topEndPos = -600;
+
+        move(bgLayer1, layer1Velocity);
+        setTimeout(move(bgLayer2, layer2Velocity), 500);
+        setTimeout(move(bgLayer3, layer3Velocity), 1000);
+        setTimeout(move(bgLayer4, layer4Velocity), 500);
+        //        move(bgLayer2Imgs, layer2Velocity);
+        //        move(bgLayer3Imgs, layer3Velocity);
+        //        move(bgLayer4Imgs, layer4Velocity);
+
+        function move(bgLayerImgs, velocity) {
+            for (var i = 0; i < bgLayerImgs.length; i++) {
+                //calculate anim duration based on dist. to offscreen and velocity
+                var offsetY = $(bgLayerImgs[i]).offset().top;
+                var deltaY = offsetY - topEndPos;
+                var animDur = deltaY / velocity;
+
+                $(bgLayerImgs[i]).velocity({
+                    top: topEndPos + 'px'
+                }, {
+                    duration: animDur,
+                    easing: "linear",
+                    complete: function() {}
+                });
+            }
+        }
+
+    }
+
+    function clearBackground() {
+        if (navClicked == false) {
+            var bgContainer = document.querySelector(".bgContainer");
+            while (bgContainer.firstChild) {
+                bgContainer.removeChild(bgContainer.firstChild);
+            }
+            bgGenerated = false;
+        }
+    }
+
+</script>
