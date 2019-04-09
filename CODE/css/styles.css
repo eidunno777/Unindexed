@@ -63,6 +63,16 @@ body {
     color: #c6c6c6;
     padding-top: 10px;
 }
+.biggishHeaderText {
+    position: relative;
+    z-index: 2000;
+    font-family: "Blender Pro Thin" !important;
+    font-size: 36pt;
+    line-height: 40pt;
+    font-style: normal;
+    color: #c6c6c6;
+    padding-top: 10px;
+}
 .smBigHeaderText {
     position: relative;
     z-index: 2000;
@@ -157,7 +167,7 @@ body {
     z-index: 1000000;
     box-sizing: border-box;
 /*    background-color:rgba(0, 0, 0, 0.3);*/
-    opacity: 1;
+    opacity: 0;
     width: 100vh;
     height: 80px;
     transform-origin: top left;
@@ -222,8 +232,11 @@ body {
 
 .uiTitle {
     position: absolute;
+/*    display: none;*/
+    opacity: 0;
     left: 40px;
     top: 30px;
+    transition: 1.5s all ease;
 }
 .uiTitle:hover {
     cursor: pointer;
@@ -307,14 +320,6 @@ body {
     opacity: .8;
 }
 
-/*
-.navMenuText:hover{
-    opacity: .9;
-    cursor: pointer;
-}
-*/
-
-.navMenuText {}
 
 .bgImage {
     position: absolute;
@@ -328,16 +333,6 @@ body {
 
 .dud {
     color: #757575;
-}
-
-
-.navMenuText {
-    /*
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: row;
-    flex-wrap: nowrap;
-*/
 }
 
 .navNum {
@@ -405,7 +400,7 @@ body {
     opacity: .2;
     height: 90px;
     width: 90px;
-    z-index: 900;
+    z-index: 500;
 }
 .WL_bgLayer1 {
     position: absolute;
@@ -415,7 +410,7 @@ body {
     opacity: .25;
     height: 120px;
     width: 120px;
-    z-index: 900;
+    z-index: 500;
 }
 .SR_BGLayer4 {
     position: absolute;
@@ -499,7 +494,11 @@ body {
     overflow: hidden;
 }
 .opacity1{
-    opacity: 1;
+    visibility: visible !important;
+    opacity: 1 !important;
+}
+.displayNone{
+    display: none !important;
 }
 .fadeOut{
     opacity: 0;
@@ -508,9 +507,19 @@ body {
     opacity: 0 !important;
     animation: scaleDown ease 1.5s;
 }
+.fadeOutAndScaleUp{
+    opacity: 0 !important;
+    animation: scaleUpFrom1 ease 1.5s;
+}
 .fadeInAndScale{
     opacity: 1 !important;
-    animation: scaleDown2 ease 1.5s;
+    animation: scaleDown2 ease 1.3s;
+    animation-fill-mode: forwards;
+}
+.fadeInAndScaleUp{
+/*    display: inline-block!important;*/
+    opacity: 1 !important;
+    animation: scaleUp ease 2.5s;
     animation-fill-mode: forwards;
 }
 .VideoFadeInAndScale{
@@ -519,26 +528,39 @@ body {
     animation-fill-mode: forwards;
 }
 @keyframes scaleDownQuick{
-    0% {transform: scale(1.07);}
+    0% {transform: scale(1.04);}
     100% {transform: scale(1);}
 }
 @keyframes scaleDown2{
-    0% {transform: scale(1.1);}
+    0% {transform: scale(1.08);}
     100% {transform: scale(1);}
 }
 @keyframes scaleDown{
     0% {transform: scale(1);}
     100% {transform: scale(.9);}
 }
+@keyframes scaleUp{
+    0% {transform: scale(.9);}
+    100% {transform: scale(1);}
+}
+@keyframes scaleUpFrom1{
+    0% {transform: scale(1);}
+    100% {transform: scale(1.1);}
+}
 .navMenu {
+/*
+    opacity: 0;
+    visibility: hidden;
+*/
     transition: .7s all ease;
     position: relative;
     z-index: 2000;
 }
 .navPage{
     transition: all ease 2s;
-/*    opacity: 0;*/
-/*    transform: scale(1.1);*/
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(1.1);
 }
 .bgRow1{
     animation-name: moveUpAndDown;
@@ -624,9 +646,16 @@ body {
 }
 
 .storyPage {
-/*    z-index: -1000;*/
-    top: 100%;
+/*    display: none;*/
+    top: 0%;
+    opacity: 0;
+    visibility: hidden;
+/*    opacity: 1;*/
+/*    top: 100%;*/
+    z-index: 10000;
     left: 0;
+    transform: scale(.95);
+    transition: all ease 1.4s;
 }
 
 .padding18 {
@@ -735,8 +764,9 @@ body {
     width: 650px;
     height: 410px;
     position: absolute;
-    top: 9%;
+    top: 8%;
     left: 33%;
+    filter: brightness(.5);
 }
 
 #collatBut {
@@ -814,7 +844,7 @@ body {
     padding-top: 10px;
     left: -8px;
     opacity: 0;
-    width: 220px;
+    width: 260px;
     transition: 1s ease all;
 }
 
@@ -1168,10 +1198,10 @@ body {
 }
 
 .silkRoadNavMenu {
-/*
-    width: 284px;
-    padding-left: 0px;
-*/
+    position: relative;
+    width: 304px;
+    left: 21px;
+/*    padding-left: 0px;*/
 }
 
 .SR02_bodyText {
@@ -1188,7 +1218,7 @@ body {
 }
 
 .SR01_headerText {
-    width: 630px;
+    width: 530px;
 }
 
 .WL_05 {
@@ -1208,7 +1238,7 @@ body {
     left: 24%;
     width: 200px;
     z-index: 1020;
-/*    -webkit-filter:brightness(0.7);*/
+    -webkit-filter:brightness(0.8);
 }
 
 .babyHeaderText {
@@ -1220,7 +1250,6 @@ body {
     font-style: normal;
     color: #c6c6c6;
     width: 90px;
-    opacity: 1;
     transition: all 1s ease;
     filter: brightness(.7);
 }
@@ -1276,8 +1305,8 @@ body {
     opacity: 1 !important;
     width: 180px;
     position: absolute;
-    left: 38%;
-    top: 66%;
+    left: 33%;
+    top: 61%;
 }
 
 .WL02_caption {
@@ -1302,4 +1331,93 @@ body {
 
 .padding15 {
     padding-top: 15%;
+}
+
+.anon_Vid {
+    opacity: 1;
+    transition: all ease 1.5s;
+}
+
+.anon_01 {
+    width: 700px;
+    top: 22%;
+    left: 30%;
+    filter: brightness(.7);
+}
+
+.anon_02 {
+    width: 400px;
+    top: 59%;
+    left: 2%;
+    filter: brightness(.6);
+}
+
+.anon_03 {
+    position: relative;
+    top: 36%;
+    left: 194%;
+    width: 170px;
+    z-index: 500px;
+    filter: brightness(.7);
+}
+
+.anon_04 {
+    left: 159%;
+    top:13%;
+    width: 350px;
+}
+
+.anon_05 {
+    width: 142px;
+    top: 10%;
+    left: 1%;
+    filter: brightness(.6);
+}
+
+.anon_06 {
+    width: 300px;
+    left: 77%;
+    top: 6%;
+    filter: brightness(.8);
+}
+
+.padding26 {
+    padding-top: 26%;
+}
+@media all and (max-width: 991px) {
+    
+}
+@media all and (max-width: 768px) {
+    
+}
+@media all and (max-width: 480px) {
+    .smHeaderText{
+        font-size: 26pt;
+        line-height: 34pt;
+    }
+    .SR01_headerText {
+        width: 430px;
+    }
+    .bodyText{
+         width: 320px;
+    }
+}
+.WL01_bodyText {
+    width: 38-px;
+}
+
+.WL01_headerText {
+    width: 560px;
+}
+
+.nav1 {
+
+}
+
+.nav2 {
+
+}
+
+.nav3 {
+    
 }
