@@ -115,6 +115,7 @@ body {
     padding-top: 10px;
     text-indent: 0;
     hanging-punctuation: first;
+    word-wrap: break-word !important;
 }
 .titleText{
     position: absolute;
@@ -231,9 +232,8 @@ body {
 }
 
 .uiTitle {
-    position: absolute;
-/*    display: none;*/
-    opacity: 0;
+/*    opacity: 0;*/
+    display: inline-block;
     left: 40px;
     top: 30px;
     transition: 1.5s all ease;
@@ -338,10 +338,10 @@ body {
 .navNum {
     color: #ed1c24;
     font-family: "Blender Pro Thin" !important;
-    font-size: 10pt;
-    line-height: 81px;
+    font-size: 12pt;
+    line-height: 80px;
     margin: auto;
-    opacity: .7;
+    opacity: 1;
 }
 
 .navHover {
@@ -420,7 +420,7 @@ body {
     opacity: .05;
     height: 17px;
     width: 50px;
-    z-index: 300;
+    z-index: 200;
 }
 @keyframes opacity005 {
     0% { opacity: 0; }
@@ -448,7 +448,7 @@ body {
     opacity: .2;
     height: 40px;
     width: 120px;
-    z-index: 500;
+    z-index: 100;
 }
 @keyframes opacity02 {
     0% { opacity: 0; }
@@ -462,7 +462,7 @@ body {
     opacity: .25;
     height: 63px;
     width: 190px;
-    z-index: 500;
+    z-index: 100;
 }
 @keyframes opacity025 {
     0% { opacity: 0; }
@@ -557,6 +557,7 @@ body {
     z-index: 2000;
 }
 .navPage{
+    z-index: 1000000;
     transition: all ease 2s;
     visibility: hidden;
     opacity: 0;
@@ -652,7 +653,7 @@ body {
     visibility: hidden;
 /*    opacity: 1;*/
 /*    top: 100%;*/
-    z-index: 10000;
+/*    z-index: 10000;*/
     left: 0;
     transform: scale(.95);
     transition: all ease 1.4s;
@@ -970,7 +971,7 @@ body {
 
 .video {
     position: absolute;
-    z-index: 1000;
+    z-index: 500 !important;
 }
 
 .WL05_bodyText {
@@ -1119,7 +1120,12 @@ body {
     margin-top: 12px;
     width: 80px !important;
 }
-
+WL_bgImg{
+    position: absolute !important;
+}
+SR_bgImg{
+    position: absolute !important;
+}
 .SR05_bodyText {
     display: inline-block;
 /*    vertical-align: top;*/
@@ -1242,7 +1248,8 @@ body {
 }
 
 .babyHeaderText {
-    position: absolute;
+/*    position: absolute;*/
+    margin: 0 0 0 0;
     z-index: 3000;
     font-family: "Blender Pro Thin" !important;
     font-size: 13pt;
@@ -1253,7 +1260,9 @@ body {
     transition: all 1s ease;
     filter: brightness(.7);
 }
-
+.babyHeaderText:hover{
+    filter: brightness(1);
+}
 .scrollIcon {
     height: 50px;
     position: absolute;
@@ -1396,14 +1405,73 @@ body {
         line-height: 34pt;
     }
     .SR01_headerText {
-        width: 430px;
+        width: 320px;
     }
     .bodyText{
          width: 320px;
     }
+    .paddingMdLeft{
+        padding-left: 55px;
+    }
+    .quoteHeader{
+        padding-left: 10px;
+        font-size: 33pt;
+        line-height: 34pt;
+    }
+    .SR_quoteText{
+        width: 320px;
+        height: 297px;
+    }
+    .titleText{
+        font-size: 28pt;
+        transform: translate(-42%, -50%);
+    }
+    .navMenuText{
+        font-size: 28pt;
+        line-height: 60px;
+        letter-spacing: 5pt;
+    }
+    .medHeaderText{
+        font-size: 22pt;
+        line-height: 27pt;
+    }
+    .SR04_headerText{
+        width: 100%;
+    }
+    .SR05_bodyText{
+        width: 37%;
+    }
+    .quoteSignature{
+        font-size: 11pt;
+        line-height: 40pt;
+        letter-spacing: 1px;
+    }
+    .anon03_quoteSignature{
+        padding-top: 40px;
+    }
+    .babyHeaderText{
+        font-size: 11pt;
+        letter-spacing: 2px;
+    }
+    .WL01_headerText {
+        width: 290px !important;
+        font-size: 26pt;
+        line-height: 29pt;
+    }
+    .WL01_bodyText{
+        width: 280px !important;
+    }
+    .padding24{
+        padding-top: 0%;
+    }
+    .WL_quoteText{
+        width: 340px;
+        line-height: 42pt;
+        font-size: 42pt !important;
+    }
 }
 .WL01_bodyText {
-    width: 38-px;
+    width: 380px;
 }
 
 .WL01_headerText {
@@ -1420,4 +1488,30 @@ body {
 
 .nav3 {
     
+}
+
+.redLine {
+    display: inline-block;
+    margin-top: 3px;
+    background-color: #ed1c24;
+    width: 3px;
+    height: 16px;
+/*    opacity: .9;*/
+}
+.redLine:hover{
+    cursor: pointer;
+}
+
+.titleWrap {
+    opacity: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    position: absolute;
+    left: 40px;
+    top: 30px;
+    width: 113px;
+}
+titleWrap:hover{
+    cursor: pointer;
 }
